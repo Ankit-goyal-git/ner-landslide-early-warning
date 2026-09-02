@@ -1,0 +1,628 @@
+event_id,event_date,year,month,month_sin,month_cos,is_monsoon,pre_monsoon,post_monsoon,latitude,longitude,state,trigger,landslide_size,landslide_category,elevation_proxy_m,slope_proxy_deg,rainfall_antecedent_proxy_mm,historical_density_50km,min_dist_to_historical_km,label,sample_type
+2164,2010-07-29 23:00:00,2010,7,0.0,-1.0,1,0,0,25.3098633,94.48214677,Manipur,downpour,medium,landslide,1214.0,31.6,702.0,15,0.0,1,observed_historical_event
+7370,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,24.1419,94.1078,Manipur,continuous_rain,medium,landslide,1280.8,29.5,517.1,13,0.0,1,observed_historical_event
+1109,2009-08-20 00:00:00,2009,8,-0.5,-0.866,1,0,0,25.5215,93.1645,Assam,downpour,medium,landslide,409.1,8.2,562.4,11,0.0,1,observed_historical_event
+322,2007-10-21 00:00:00,2007,10,-1.0,-0.0,0,0,1,24.75,93.4333,Assam,rain,medium,landslide,486.2,19.6,133.6,26,0.0,1,observed_historical_event
+5552,2013-09-24 00:00:00,2013,9,-0.866,-0.5,1,0,0,25.0985,94.3619,Manipur,unknown,medium,landslide,1164.1,32.0,318.4,18,0.0,1,observed_historical_event
+7031,2015-05-24 00:00:00,2015,5,0.866,-0.5,0,1,0,27.6163,88.6586,Sikkim,unknown,medium,landslide,2595.4,42.0,286.9,17,0.0,1,observed_historical_event
+9405,2016-04-19 00:00:00,2016,4,1.0,0.0,0,1,0,26.7223,95.0243,Nagaland,continuous_rain,medium,landslide,1314.2,30.8,228.3,3,0.0,1,observed_historical_event
+5343,2013-08-17 23:00:00,2013,8,-0.5,-0.866,1,0,0,24.7625,93.4341,Assam,continuous_rain,medium,landslide,481.4,20.0,518.7,26,0.0,1,observed_historical_event
+6971,2015-06-09 00:00:00,2015,6,0.5,-0.866,1,0,0,27.0987,93.816,Arunachal Pradesh,continuous_rain,medium,landslide,2004.3,30.0,567.5,7,0.0,1,observed_historical_event
+1611,2010-04-01 00:00:00,2010,4,1.0,0.0,0,1,0,25.1553,93.028,Assam,downpour,medium,landslide,432.6,19.6,222.7,19,0.0,1,observed_historical_event
+147,2007-07-30 00:00:00,2007,7,0.0,-1.0,1,0,0,22.533,92.899,Mizoram,downpour,medium,landslide,1026.0,32.5,691.5,3,0.0,1,observed_historical_event
+4382,2012-06-03 00:00:00,2012,6,0.5,-0.866,1,0,0,25.1175,92.8573,Assam,downpour,medium,landslide,355.7,13.0,611.6,19,0.0,1,observed_historical_event
+1112,2009-08-20 00:00:00,2009,8,-0.5,-0.866,1,0,0,27.1761,88.5287,Sikkim,downpour,medium,mudslide,2819.9,43.7,556.2,30,0.0,1,observed_historical_event
+2424,2010-09-13 00:00:00,2010,9,-0.866,-0.5,1,0,0,23.591,92.9296,Mizoram,downpour,medium,landslide,1032.0,26.4,444.5,20,0.0,1,observed_historical_event
+78,2007-05-23 00:00:00,2007,5,0.866,-0.5,0,1,0,27.3383,88.6069,Sikkim,rain,medium,landslide,2963.3,40.4,328.2,31,0.0,1,observed_historical_event
+5431,2013-09-01 00:00:00,2013,9,-0.866,-0.5,1,0,0,24.9829,93.5063,Assam,continuous_rain,medium,mudslide,200.1,19.1,422.1,33,0.0,1,observed_historical_event
+3672,2011-06-29 00:00:00,2011,6,0.5,-0.866,1,0,0,25.5125,93.3613,Assam,downpour,medium,landslide,259.8,17.9,604.5,9,0.0,1,observed_historical_event
+2253,2010-08-15 23:00:00,2010,8,-0.5,-0.866,1,0,0,25.31006064,94.48265093,Manipur,downpour,medium,landslide,1213.5,31.5,570.2,15,0.0,1,observed_historical_event
+1108,2009-08-20 00:00:00,2009,8,-0.5,-0.866,1,0,0,24.9925,93.5,Assam,downpour,medium,landslide,193.0,19.3,575.7,31,0.0,1,observed_historical_event
+6105,2014-06-26 23:00:00,2014,6,0.5,-0.866,1,0,0,28.9205,95.3429,Arunachal Pradesh,continuous_rain,medium,landslide,2349.9,32.4,557.2,2,0.0,1,observed_historical_event
+9168,2016-06-12 23:00:00,2016,6,0.5,-0.866,1,0,0,27.6438,93.871,Arunachal Pradesh,downpour,medium,landslide,1933.4,28.2,619.1,2,0.0,1,observed_historical_event
+3560,2011-05-31 14:30:00,2011,5,0.866,-0.5,0,1,0,24.8286,93.5935,Manipur,downpour,medium,landslide,1273.3,24.1,413.5,33,0.0,1,observed_historical_event
+587,2008-06-15 00:00:00,2008,6,0.5,-0.866,1,0,0,27.2298,94.0989,Assam,downpour,medium,landslide,429.1,19.7,607.5,6,0.0,1,observed_historical_event
+8012,2015-09-06 15:00:00,2015,9,-0.866,-0.5,1,0,0,25.9703,91.8584,Meghalaya,unknown,medium,landslide,1101.5,30.2,303.9,42,0.0,1,observed_historical_event
+7335,2015-08-18 09:00:00,2015,8,-0.5,-0.866,1,0,0,25.5145,90.2023,Meghalaya,continuous_rain,medium,landslide,1133.5,33.1,540.4,8,0.0,1,observed_historical_event
+3983,2011-09-23 00:00:00,2011,9,-0.866,-0.5,1,0,0,26.1548,91.7351,Assam,downpour,large,landslide,441.7,20.0,447.9,41,0.0,1,observed_historical_event
+148,2007-07-30 00:00:00,2007,7,0.0,-1.0,1,0,0,22.479,92.967,Mizoram,downpour,medium,landslide,924.4,30.9,688.3,3,0.0,1,observed_historical_event
+7385,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,24.004,93.9815,Manipur,continuous_rain,medium,landslide,955.7,23.8,518.9,11,0.0,1,observed_historical_event
+2575,2010-10-09 00:00:00,2010,10,-1.0,-0.0,0,0,1,25.5242,92.9914,Assam,downpour,medium,landslide,203.2,20.0,185.2,12,0.0,1,observed_historical_event
+3840,2011-07-25 00:00:00,2011,7,0.0,-1.0,1,0,0,24.6869,93.9157,Manipur,downpour,medium,landslide,1240.7,25.1,701.1,28,0.0,1,observed_historical_event
+6015,2014-05-08 00:00:00,2014,5,0.866,-0.5,0,1,0,27.9032,96.174,Arunachal Pradesh,rain,medium,mudslide,2193.1,32.1,332.2,2,0.0,1,observed_historical_event
+9051,2016-07-19 09:00:00,2016,7,0.0,-1.0,1,0,0,26.09748244,91.8744337,Meghalaya,unknown,medium,landslide,1057.2,27.4,488.2,40,0.0,1,observed_historical_event
+2392,2010-09-04 00:00:00,2010,9,-0.866,-0.5,1,0,0,27.3702,88.7334,Sikkim,downpour,medium,landslide,2830.8,35.5,452.9,29,0.0,1,observed_historical_event
+3830,2011-07-22 00:00:00,2011,7,0.0,-1.0,1,0,0,24.3527,94.3429,Manipur,downpour,small,landslide,1240.3,20.6,710.3,10,0.0,1,observed_historical_event
+1755,2010-04-17 15:00:00,2010,4,1.0,0.0,0,1,0,27.3341,88.6083,Sikkim,downpour,small,landslide,2959.4,40.1,231.5,31,0.0,1,observed_historical_event
+6990,2015-06-24 00:00:00,2015,6,0.5,-0.866,1,0,0,26.0319,94.5466,Nagaland,continuous_rain,medium,landslide,1144.8,26.5,570.8,11,0.0,1,observed_historical_event
+6222,2014-10-01 11:00:00,2014,10,-1.0,-0.0,0,0,1,27.1249,93.7706,Arunachal Pradesh,unknown,small,landslide,2060.6,28.6,130.7,7,0.0,1,observed_historical_event
+9169,2016-06-12 00:00:00,2016,6,0.5,-0.866,1,0,0,26.1677,94.2442,Nagaland,continuous_rain,unknown,landslide,1497.9,37.9,572.5,8,0.0,1,observed_historical_event
+2344,2010-08-27 16:30:00,2010,8,-0.5,-0.866,1,0,0,24.7505,93.4221,Assam,downpour,medium,landslide,492.6,19.0,577.0,24,0.0,1,observed_historical_event
+7263,2015-07-22 00:00:00,2015,7,0.0,-1.0,1,0,0,25.4477,94.0489,Manipur,continuous_rain,medium,landslide,1023.3,30.4,652.4,23,0.0,1,observed_historical_event
+4424,2012-06-20 00:00:00,2012,6,0.5,-0.866,1,0,0,26.149,91.7351,Assam,downpour,medium,landslide,431.8,20.0,616.6,41,0.0,1,observed_historical_event
+3525,2011-05-22 00:00:00,2011,5,0.866,-0.5,0,1,0,25.0672,93.4093,Assam,downpour,medium,landslide,247.4,18.2,397.1,32,0.0,1,observed_historical_event
+7369,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,24.1988,94.1016,Manipur,continuous_rain,medium,landslide,1324.8,23.7,522.2,13,0.0,1,observed_historical_event
+4377,2012-06-02 00:00:00,2012,6,0.5,-0.866,1,0,0,26.1475,91.7356,Assam,downpour,large,landslide,428.7,20.0,606.2,41,0.0,1,observed_historical_event
+5430,2013-09-01 00:00:00,2013,9,-0.866,-0.5,1,0,0,24.9037,93.487,Manipur,continuous_rain,medium,mudslide,1027.7,21.1,410.5,32,0.0,1,observed_historical_event
+7264,2015-07-22 00:00:00,2015,7,0.0,-1.0,1,0,0,25.4538,93.9827,Manipur,continuous_rain,medium,landslide,982.2,31.4,643.8,17,0.0,1,observed_historical_event
+256,2007-09-10 00:00:00,2007,9,-0.866,-0.5,1,0,0,27.3425,88.6236,Sikkim,rain,medium,landslide,2940.9,42.4,349.0,31,0.0,1,observed_historical_event
+9335,2016-05-18 08:00:00,2016,5,0.866,-0.5,0,1,0,24.5202,92.7239,Assam,continuous_rain,unknown,landslide,420.1,19.7,374.9,10,0.0,1,observed_historical_event
+7279,2015-07-24 00:00:00,2015,7,0.0,-1.0,1,0,0,24.9818,93.5142,Manipur,monsoon,medium,mudslide,956.8,31.5,605.9,33,0.0,1,observed_historical_event
+6288,2014-09-22 00:00:00,2014,9,-0.866,-0.5,1,0,0,26.1985,91.7998,Assam,rain,small,landslide,428.9,10.5,355.6,40,0.0,1,observed_historical_event
+258,2007-09-11 00:00:00,2007,9,-0.866,-0.5,1,0,0,24.4279,94.0564,Manipur,rain,medium,landslide,996.9,30.8,355.8,17,0.0,1,observed_historical_event
+5338,2013-08-16 00:00:00,2013,8,-0.5,-0.866,1,0,0,26.8727,94.9275,Assam,rain,medium,landslide,548.7,8.3,443.7,3,0.0,1,observed_historical_event
+6143,2014-07-14 18:00:00,2014,7,0.0,-1.0,1,0,0,23.7327,92.7463,Mizoram,downpour,medium,landslide,1314.0,24.0,692.7,20,0.0,1,observed_historical_event
+4908,2013-06-08 17:00:00,2013,6,0.5,-0.866,1,0,0,27.3721,88.708,Sikkim,downpour,medium,landslide,2842.8,38.2,622.4,29,0.0,1,observed_historical_event
+9124,2016-07-19 00:00:00,2016,7,0.0,-1.0,1,0,0,25.203,90.5573,Meghalaya,continuous_rain,large,translational_slide,1526.5,28.9,654.2,5,0.0,1,observed_historical_event
+9338,2016-05-18 08:00:00,2016,5,0.866,-0.5,0,1,0,24.4638,92.4943,Assam,continuous_rain,medium,landslide,232.4,19.8,383.2,9,0.0,1,observed_historical_event
+2421,2010-09-13 09:00:00,2010,9,-0.866,-0.5,1,0,0,23.75406693,92.74128531,Mizoram,downpour,medium,landslide,1297.3,24.5,443.8,20,0.0,1,observed_historical_event
+8901,2016-07-10 00:00:00,2016,7,0.0,-1.0,1,0,0,25.7902,94.1318,Nagaland,downpour,medium,landslide,1571.3,26.1,704.2,17,0.0,1,observed_historical_event
+2283,2010-08-19 00:00:00,2010,8,-0.5,-0.866,1,0,0,24.8961,93.4957,Manipur,downpour,medium,mudslide,1044.9,21.2,559.6,32,0.0,1,observed_historical_event
+4552,2012-09-14 00:00:00,2012,9,-0.866,-0.5,1,0,0,27.0377,88.3603,Sikkim,downpour,medium,landslide,2689.8,43.4,449.0,25,0.0,1,observed_historical_event
+6016,2014-05-09 23:00:00,2014,5,0.866,-0.5,0,1,0,24.8669,92.3576,Assam,rain,small,landslide,364.8,18.6,336.7,12,0.0,1,observed_historical_event
+7780,2015-08-26 00:00:00,2015,8,-0.5,-0.866,1,0,0,23.3572,92.7878,Mizoram,continuous_rain,medium,landslide,1033.8,24.3,532.5,17,0.0,1,observed_historical_event
+6283,2014-09-22 00:00:00,2014,9,-0.866,-0.5,1,0,0,26.1314,91.7548,Assam,rain,small,landslide,376.0,20.0,360.4,41,0.0,1,observed_historical_event
+8930,2016-07-11 23:00:00,2016,7,0.0,-1.0,1,0,0,26.1699,94.4922,Nagaland,unknown,large,landslide,1264.6,34.9,487.1,8,0.0,1,observed_historical_event
+869,2008-10-29 00:00:00,2008,10,-1.0,-0.0,0,0,1,27.2333,94.1167,Assam,downpour,medium,landslide,460.8,20.0,185.1,6,0.0,1,observed_historical_event
+285,2007-09-29 00:00:00,2007,9,-0.866,-0.5,1,0,0,24.1293,92.6921,Mizoram,rain,medium,landslide,1293.2,25.2,365.9,23,0.0,1,observed_historical_event
+3662,2011-06-28 00:00:00,2011,6,0.5,-0.866,1,0,0,25.03561729,94.0144205,Manipur,rain,medium,landslide,949.1,24.1,478.7,28,0.0,1,observed_historical_event
+8339,2015-09-23 00:00:00,2015,9,-0.866,-0.5,1,0,0,26.1666,91.7042,Assam,continuous_rain,medium,landslide,501.3,19.6,409.3,42,0.0,1,observed_historical_event
+9186,2016-07-25 12:30:00,2016,7,0.0,-1.0,1,0,0,25.48,94.1383,Manipur,continuous_rain,medium,landslide,1102.3,20.0,645.9,21,0.0,1,observed_historical_event
+7253,2015-07-22 00:00:00,2015,7,0.0,-1.0,1,0,0,24.7979,92.9974,Assam,continuous_rain,medium,landslide,473.8,12.3,644.7,19,0.0,1,observed_historical_event
+6286,2014-09-22 00:00:00,2014,9,-0.866,-0.5,1,0,0,26.1044,91.7082,Assam,rain,small,landslide,402.6,14.3,351.8,41,0.0,1,observed_historical_event
+594,2008-06-19 00:00:00,2008,6,0.5,-0.866,1,0,0,24.9336,93.8275,Manipur,monsoon,medium,mudslide,1136.5,27.1,538.6,35,0.0,1,observed_historical_event
+7383,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,23.899,94.1434,Manipur,rain,medium,landslide,1119.8,20.0,460.4,7,0.0,1,observed_historical_event
+8900,2016-07-07 00:00:00,2016,7,0.0,-1.0,1,0,0,25.0118,94.3136,Manipur,monsoon,large,landslide,1135.5,20.6,597.9,21,0.0,1,observed_historical_event
+7666,2015-08-11 00:00:00,2015,8,-0.5,-0.866,1,0,0,25.1019,93.3729,Manipur,continuous_rain,medium,landslide,1088.5,30.0,532.9,32,0.0,1,observed_historical_event
+2113,2010-07-21 08:00:00,2010,7,0.0,-1.0,1,0,0,27.3773,88.559,Sikkim,downpour,medium,landslide,3025.2,39.4,695.9,31,0.0,1,observed_historical_event
+7701,2015-08-19 15:00:00,2015,8,-0.5,-0.866,1,0,0,25.6278,94.1051,Nagaland,continuous_rain,medium,landslide,1332.7,36.2,539.4,12,0.0,1,observed_historical_event
+2422,2010-09-13 00:00:00,2010,9,-0.866,-0.5,1,0,0,23.74182634,92.7141905,Mizoram,downpour,medium,landslide,1333.1,24.4,451.0,20,0.0,1,observed_historical_event
+6513,2014-08-14 23:00:00,2014,8,-0.5,-0.866,1,0,0,23.0137,91.7174,Tripura,downpour,medium,mudslide,265.8,17.7,562.1,1,0.0,1,observed_historical_event
+4990,2013-06-27 23:00:00,2013,6,0.5,-0.866,1,0,0,27.3765,88.7628,Sikkim,downpour,medium,landslide,2827.7,32.5,605.2,28,0.0,1,observed_historical_event
+6106,2014-06-26 23:00:00,2014,6,0.5,-0.866,1,0,0,26.1407,91.7645,Assam,continuous_rain,small,landslide,376.5,19.7,571.0,41,0.0,1,observed_historical_event
+3965,2011-09-06 08:00:00,2011,9,-0.866,-0.5,1,0,0,24.808,93.117,Assam,rain,medium,landslide,617.4,18.5,353.1,31,0.0,1,observed_historical_event
+6969,2015-06-16 06:15:00,2015,6,0.5,-0.866,1,0,0,25.5114,90.215,Meghalaya,downpour,medium,landslide,1116.5,32.4,613.6,9,0.0,1,observed_historical_event
+8684,2016-07-07 00:00:00,2016,7,0.0,-1.0,1,0,0,25.9611,91.3681,Assam,continuous_rain,medium,landslide,256.1,15.1,660.4,31,0.0,1,observed_historical_event
+1596,2010-03-27 20:00:00,2010,3,0.866,0.5,0,0,0,24.7339,93.9161,Manipur,downpour,medium,mudslide,1269.4,20.7,94.2,33,0.0,1,observed_historical_event
+1771,2010-04-20 00:00:00,2010,4,1.0,0.0,0,1,0,26.1978,91.7665,Assam,downpour,medium,landslide,473.5,14.3,227.5,41,0.0,1,observed_historical_event
+7364,2015-07-31 09:00:00,2015,7,0.0,-1.0,1,0,0,24.819,94.3551,Manipur,continuous_rain,medium,landslide,1321.1,31.0,662.9,18,0.0,1,observed_historical_event
+6968,2015-06-13 00:00:00,2015,6,0.5,-0.866,1,0,0,25.463,92.2121,Meghalaya,continuous_rain,medium,landslide,1281.6,25.4,569.7,7,0.0,1,observed_historical_event
+7373,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,24.9111,94.4759,Manipur,continuous_rain,medium,landslide,1020.1,26.8,518.8,12,0.0,1,observed_historical_event
+1935,2010-06-03 00:00:00,2010,6,0.5,-0.866,1,0,0,23.8986,91.7599,Tripura,downpour,medium,landslide,133.8,16.9,600.2,2,0.0,1,observed_historical_event
+7276,2015-07-25 09:00:00,2015,7,0.0,-1.0,1,0,0,26.1062,91.8717,Assam,continuous_rain,medium,landslide,217.3,12.7,640.7,40,0.0,1,observed_historical_event
+6293,2014-10-20 00:00:00,2014,10,-1.0,-0.0,0,0,1,25.5006,90.0896,Meghalaya,rain,medium,landslide,1268.6,25.6,143.7,6,0.0,1,observed_historical_event
+4858,2013-05-11 09:00:00,2013,5,0.866,-0.5,0,1,0,26.1662,91.7138,Assam,rain,medium,landslide,489.4,19.9,331.8,42,0.0,1,observed_historical_event
+6284,2014-09-22 00:00:00,2014,9,-0.866,-0.5,1,0,0,26.1324,91.8342,Assam,rain,small,landslide,276.3,14.0,357.1,40,0.0,1,observed_historical_event
+4394,2012-06-07 04:30:00,2012,6,0.5,-0.866,1,0,0,27.1748,88.6458,Sikkim,rain,large,landslide,2674.1,32.8,474.6,31,0.0,1,observed_historical_event
+9251,2016-07-28 23:00:00,2016,7,0.0,-1.0,1,0,0,25.8702,94.7844,Nagaland,downpour,medium,landslide,1600.1,34.1,695.5,8,0.0,1,observed_historical_event
+7699,2015-08-19 00:00:00,2015,8,-0.5,-0.866,1,0,0,26.0214,94.5224,Nagaland,continuous_rain,medium,landslide,1139.6,26.3,541.4,11,0.0,1,observed_historical_event
+7664,2015-08-11 00:00:00,2015,8,-0.5,-0.866,1,0,0,24.7459,93.4251,Manipur,continuous_rain,medium,landslide,1241.4,30.9,529.7,25,0.0,1,observed_historical_event
+7589,2015-08-19 00:00:00,2015,8,-0.5,-0.866,1,0,0,25.2568,92.3825,Meghalaya,rain,medium,landslide,1338.6,29.6,462.8,10,0.0,1,observed_historical_event
+7887,2015-08-16 00:00:00,2015,8,-0.5,-0.866,1,0,0,27.8835,96.9262,Arunachal Pradesh,continuous_rain,medium,landslide,2339.8,39.9,538.0,2,0.0,1,observed_historical_event
+9404,2016-05-01 00:00:00,2016,5,0.866,-0.5,0,1,0,28.0822,96.5316,Arunachal Pradesh,downpour,medium,landslide,1911.2,29.0,396.3,3,0.0,1,observed_historical_event
+6287,2014-09-22 00:00:00,2014,9,-0.866,-0.5,1,0,0,26.1295,91.7056,Assam,rain,small,landslide,438.3,16.9,364.5,41,0.0,1,observed_historical_event
+2296,2010-08-20 00:00:00,2010,8,-0.5,-0.866,1,0,0,27.167,88.3652,Sikkim,downpour,medium,complex,2712.3,32.0,572.5,30,0.0,1,observed_historical_event
+1125,2009-08-26 00:00:00,2009,8,-0.5,-0.866,1,0,0,27.3746,88.7648,Sikkim,rain,medium,landslide,2828.9,32.5,451.9,28,0.0,1,observed_historical_event
+8995,2016-07-14 00:00:00,2016,7,0.0,-1.0,1,0,0,26.1963,91.8074,Assam,monsoon,small,landslide,415.5,10.0,596.7,40,0.0,1,observed_historical_event
+2567,2010-10-08 00:00:00,2010,10,-1.0,-0.0,0,0,1,25.6633,94.4703,Manipur,downpour,medium,complex,1105.6,29.6,180.0,17,0.0,1,observed_historical_event
+3794,2011-07-17 00:00:00,2011,7,0.0,-1.0,1,0,0,26.99195749,88.42280921,Sikkim,rain,medium,landslide,2837.8,42.2,544.8,25,0.0,1,observed_historical_event
+6285,2014-09-22 00:00:00,2014,9,-0.866,-0.5,1,0,0,26.159,91.8178,Assam,rain,small,landslide,336.7,12.8,357.4,40,0.0,1,observed_historical_event
+868,2008-10-29 00:00:00,2008,10,-1.0,-0.0,0,0,1,26.3333,91.25,Assam,downpour,medium,landslide,576.1,19.9,175.3,7,0.0,1,observed_historical_event
+5476,2013-09-07 15:00:00,2013,9,-0.866,-0.5,1,0,0,27.3736,88.7323,Sikkim,rain,medium,landslide,2830.1,35.2,370.3,29,0.0,1,observed_historical_event
+1127,2009-08-27 00:00:00,2009,8,-0.5,-0.866,1,0,0,25.1718,93.123,Assam,downpour,medium,landslide,589.4,12.4,577.4,28,0.0,1,observed_historical_event
+5603,2013-10-13 19:30:00,2013,10,-1.0,-0.0,0,0,1,25.426,94.6024,Manipur,downpour,medium,mudslide,1091.8,28.3,170.6,10,0.0,1,observed_historical_event
+7933,2015-09-01 00:00:00,2015,9,-0.866,-0.5,1,0,0,26.1868,91.6739,Assam,rain,medium,rock_fall,565.9,19.1,359.0,42,0.0,1,observed_historical_event
+3837,2011-07-24 12:30:00,2011,7,0.0,-1.0,1,0,0,26.5836,93.0038,Assam,downpour,medium,landslide,216.0,9.0,690.5,1,0.0,1,observed_historical_event
+220,2007-08-31 00:00:00,2007,8,-0.5,-0.866,1,0,0,25.1333,93.9667,Manipur,rain,medium,landslide,1084.2,29.7,461.3,30,0.0,1,observed_historical_event
+7372,2015-07-31 23:00:00,2015,7,0.0,-1.0,1,0,0,25.0634,94.3415,Manipur,continuous_rain,medium,mudslide,1140.9,28.8,659.8,18,0.0,1,observed_historical_event
+2570,2010-10-08 00:00:00,2010,10,-1.0,-0.0,0,0,1,24.837,93.9128,Manipur,downpour,medium,landslide,1182.8,25.7,171.5,32,0.0,1,observed_historical_event
+126,2007-07-16 00:00:00,2007,7,0.0,-1.0,1,0,0,27.1499,88.38,Sikkim,rain,medium,mudslide,2712.3,32.0,558.0,30,0.0,1,observed_historical_event
+1168,2009-09-17 00:00:00,2009,9,-0.866,-0.5,1,0,0,27.1954,88.6115,Sikkim,rain,medium,landslide,2755.2,33.8,361.7,31,0.0,1,observed_historical_event
+714,2008-08-14 00:00:00,2008,8,-0.5,-0.866,1,0,0,27.163,94.0,Assam,rain,medium,landslide,227.3,8.7,442.3,7,0.0,1,observed_historical_event
+6110,2014-06-27 00:00:00,2014,6,0.5,-0.866,1,0,0,26.1619,91.7697,Assam,rain,small,landslide,404.8,17.9,492.1,41,0.0,1,observed_historical_event
+247,2007-09-08 00:00:00,2007,9,-0.866,-0.5,1,0,0,25.0604,93.9877,Manipur,rain,medium,landslide,965.6,23.9,360.0,33,0.0,1,observed_historical_event
+4407,2012-06-13 00:00:00,2012,6,0.5,-0.866,1,0,0,25.0951,92.3567,Assam,downpour,medium,landslide,292.9,9.4,618.5,9,0.0,1,observed_historical_event
+6292,2014-09-23 00:00:00,2014,9,-0.866,-0.5,1,0,0,25.7238,89.9032,Assam,continuous_rain,small,landslide,523.3,15.9,421.8,6,0.0,1,observed_historical_event
+545,2008-05-20 00:00:00,2008,5,0.866,-0.5,0,1,0,24.9849,92.8411,Assam,mining,medium,mudslide,256.5,15.9,270.0,17,0.0,1,observed_historical_event
+7265,2015-07-22 00:00:00,2015,7,0.0,-1.0,1,0,0,25.5007,93.9854,Manipur,continuous_rain,medium,landslide,936.6,31.1,646.1,16,0.0,1,observed_historical_event
+2436,2010-09-16 03:00:00,2010,9,-0.866,-0.5,1,0,0,24.3069,93.125,Mizoram,downpour,medium,landslide,1243.9,24.3,440.0,5,0.0,1,observed_historical_event
+7727,2015-08-20 18:00:00,2015,8,-0.5,-0.866,1,0,0,25.6263,94.1057,Nagaland,continuous_rain,medium,landslide,1331.0,36.1,539.7,12,0.0,1,observed_historical_event
+7334,2015-08-18 00:00:00,2015,8,-0.5,-0.866,1,0,0,28.1737,94.7596,Arunachal Pradesh,unknown,medium,landslide,2078.6,39.6,402.0,2,0.0,1,observed_historical_event
+6200,2014-08-17 00:00:00,2014,8,-0.5,-0.866,1,0,0,27.0869,93.6086,Arunachal Pradesh,downpour,large,landslide,1972.9,39.5,576.3,5,0.0,1,observed_historical_event
+7778,2015-08-26 00:00:00,2015,8,-0.5,-0.866,1,0,0,23.8447,93.0514,Mizoram,continuous_rain,medium,mudslide,1036.6,33.3,524.2,18,0.0,1,observed_historical_event
+6290,2014-09-23 03:00:00,2014,9,-0.866,-0.5,1,0,0,25.5772,91.8666,Meghalaya,continuous_rain,small,landslide,1063.4,22.8,409.9,5,0.0,1,observed_historical_event
+4403,2012-06-10 00:00:00,2012,6,0.5,-0.866,1,0,0,24.8142,93.5444,Manipur,downpour,very_large,landslide,1228.0,20.0,621.0,31,0.0,1,observed_historical_event
+5429,2013-09-01 18:00:00,2013,9,-0.866,-0.5,1,0,0,27.3425,88.2426,Sikkim,downpour,medium,landslide,2829.7,35.1,463.2,28,0.0,1,observed_historical_event
+2140,2010-07-25 00:00:00,2010,7,0.0,-1.0,1,0,0,25.0477,92.801,Assam,downpour,medium,landslide,332.0,18.2,688.1,20,0.0,1,observed_historical_event
+9142,2016-06-14 08:00:00,2016,6,0.5,-0.866,1,0,0,26.3185,94.5247,Nagaland,continuous_rain,medium,landslide,1431.3,27.0,569.1,8,0.0,1,observed_historical_event
+6107,2014-06-26 23:00:00,2014,6,0.5,-0.866,1,0,0,26.1844,91.7896,Assam,continuous_rain,small,landslide,417.2,13.1,558.7,41,0.0,1,observed_historical_event
+255,2007-09-10 00:00:00,2007,9,-0.866,-0.5,1,0,0,24.2451,94.0691,Manipur,rain,medium,landslide,1276.1,22.3,365.5,14,0.0,1,observed_historical_event
+7660,2015-08-12 00:00:00,2015,8,-0.5,-0.866,1,0,0,25.6237,94.1136,Nagaland,continuous_rain,medium,mudslide,1338.0,36.5,535.6,12,0.0,1,observed_historical_event
+4556,2012-09-16 00:00:00,2012,9,-0.866,-0.5,1,0,0,27.1675,88.3651,Sikkim,downpour,medium,landslide,2712.8,32.0,442.7,30,0.0,1,observed_historical_event
+7389,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,24.4072,94.0644,Manipur,continuous_rain,medium,landslide,1030.6,29.7,528.4,16,0.0,1,observed_historical_event
+2437,2010-09-16 00:00:00,2010,9,-0.866,-0.5,1,0,0,23.7527,92.694,Mizoram,downpour,medium,landslide,1330.4,24.9,453.2,20,0.0,1,observed_historical_event
+7371,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,23.9939,94.0573,Manipur,continuous_rain,medium,landslide,987.7,20.0,523.1,13,0.0,1,observed_historical_event
+7923,2015-09-01 00:00:00,2015,9,-0.866,-0.5,1,0,0,26.49349035,91.72137514,Assam,rain,medium,landslide,417.3,19.8,368.3,37,0.0,1,observed_historical_event
+2182,2010-07-31 09:00:00,2010,7,0.0,-1.0,1,0,0,24.9356,93.8443,Manipur,rain,medium,landslide,1110.4,29.2,552.6,34,0.0,1,observed_historical_event
+1954,2010-06-07 00:00:00,2010,6,0.5,-0.866,1,0,0,24.7543,93.5039,Manipur,rain,medium,landslide,1242.4,28.6,478.3,30,0.0,1,observed_historical_event
+6963,2015-06-19 00:00:00,2015,6,0.5,-0.866,1,0,0,23.7131,92.7362,Mizoram,rain,medium,landslide,1336.5,24.7,486.5,20,0.0,1,observed_historical_event
+7590,2015-08-19 00:00:00,2015,8,-0.5,-0.866,1,0,0,25.1416,92.3807,Meghalaya,rain,small,landslide,1206.0,31.1,456.7,13,0.0,1,observed_historical_event
+1222,2009-10-05 00:00:00,2009,10,-1.0,-0.0,0,0,1,23.73478778,92.72124394,Mizoram,downpour,medium,landslide,1334.9,24.4,169.0,20,0.0,1,observed_historical_event
+8222,2016-06-22 12:00:00,2016,6,0.5,-0.866,1,0,0,26.1961,91.7825,Assam,downpour,medium,mudslide,447.9,12.6,606.8,41,0.0,1,observed_historical_event
+7706,2015-08-19 00:00:00,2015,8,-0.5,-0.866,1,0,0,25.0728,92.3636,Meghalaya,rain,medium,landslide,1103.4,22.4,463.4,12,0.0,1,observed_historical_event
+9620,2016-10-15 00:00:00,2016,10,-1.0,-0.0,0,0,1,27.172,88.5292,Sikkim,downpour,medium,landslide,2813.6,43.8,180.2,30,0.0,1,observed_historical_event
+8224,2015-09-14 01:30:00,2015,9,-0.866,-0.5,1,0,0,23.7313,92.7187,Mizoram,downpour,medium,landslide,1339.6,24.7,450.5,20,0.0,1,observed_historical_event
+4241,2012-03-04 00:00:00,2012,3,0.866,0.5,0,0,0,25.1604,93.6795,Manipur,unknown,medium,landslide,1352.0,31.9,67.9,29,0.0,1,observed_historical_event
+755,2008-08-28 00:00:00,2008,8,-0.5,-0.866,1,0,0,27.337,88.609,Sikkim,downpour,medium,landslide,2959.7,40.5,558.5,31,0.0,1,observed_historical_event
+1756,2010-04-17 00:00:00,2010,4,1.0,0.0,0,1,0,27.322,88.6087,Sikkim,downpour,small,landslide,2951.1,38.7,227.6,31,0.0,1,observed_historical_event
+9334,2016-05-18 08:00:00,2016,5,0.866,-0.5,0,1,0,24.5204,92.7264,Assam,continuous_rain,unknown,landslide,418.3,19.8,376.5,10,0.0,1,observed_historical_event
+8237,2016-07-01 00:00:00,2016,7,0.0,-1.0,1,0,0,27.0136,92.6351,Arunachal Pradesh,downpour,large,landslide,2123.1,29.2,700.7,1,0.0,1,observed_historical_event
+4859,2013-05-11 00:00:00,2013,5,0.866,-0.5,0,1,0,26.1771,91.7599,Assam,rain,medium,landslide,446.0,17.4,317.8,41,0.0,1,observed_historical_event
+3916,2011-08-13 08:00:00,2011,8,-0.5,-0.866,1,0,0,25.7713,93.8067,Assam,downpour,medium,mudslide,663.1,9.7,561.0,10,0.0,1,observed_historical_event
+5250,2013-08-01 00:00:00,2013,8,-0.5,-0.866,1,0,0,27.8837,93.0515,Arunachal Pradesh,rain,medium,mudslide,2224.0,32.1,440.3,1,0.0,1,observed_historical_event
+3805,2011-07-19 00:00:00,2011,7,0.0,-1.0,1,0,0,27.05374234,88.42572376,Sikkim,rain,medium,landslide,2756.9,35.0,557.8,30,0.0,1,observed_historical_event
+3738,2011-07-06 00:00:00,2011,7,0.0,-1.0,1,0,0,24.8063,93.9482,Manipur,downpour,medium,landslide,1197.2,26.3,691.7,34,0.0,1,observed_historical_event
+2426,2010-09-13 00:00:00,2010,9,-0.866,-0.5,1,0,0,22.7176,92.8416,Mizoram,downpour,medium,landslide,1150.2,24.9,462.1,3,0.0,1,observed_historical_event
+7266,2015-07-22 00:00:00,2015,7,0.0,-1.0,1,0,0,25.5098,93.8794,Manipur,continuous_rain,medium,landslide,1018.1,27.0,659.5,15,0.0,1,observed_historical_event
+1129,2009-08-30 00:00:00,2009,8,-0.5,-0.866,1,0,0,24.8628,94.4182,Manipur,downpour,medium,landslide,1159.8,20.5,557.3,14,0.0,1,observed_historical_event
+2166,2010-07-29 00:00:00,2010,7,0.0,-1.0,1,0,0,24.9786,93.5027,Assam,downpour,medium,landslide,199.6,18.6,692.0,33,0.0,1,observed_historical_event
+213,2007-08-26 00:00:00,2007,8,-0.5,-0.866,1,0,0,25.2946,92.8339,Assam,rain,medium,landslide,552.9,14.6,455.2,18,0.0,1,observed_historical_event
+4426,2012-06-22 00:00:00,2012,6,0.5,-0.866,1,0,0,26.1226,91.7162,Assam,downpour,medium,landslide,415.8,17.3,604.4,41,0.0,1,observed_historical_event
+8366,2015-09-23 15:00:00,2015,9,-0.866,-0.5,1,0,0,25.583,91.893,Meghalaya,downpour,medium,landslide,1064.4,25.7,442.8,5,0.0,1,observed_historical_event
+1934,2010-06-03 05:00:00,2010,6,0.5,-0.866,1,0,0,24.6005,92.3814,Assam,downpour,medium,landslide,324.2,18.5,622.4,8,0.0,1,observed_historical_event
+7655,2016-04-22 02:30:00,2016,4,1.0,0.0,0,1,0,27.5799,91.8569,Arunachal Pradesh,continuous_rain,medium,landslide,1857.1,39.4,220.3,3,0.0,1,observed_historical_event
+9464,2016-08-05 00:00:00,2016,8,-0.5,-0.866,1,0,0,27.5754,91.9754,Arunachal Pradesh,downpour,medium,landslide,1906.6,32.4,567.3,3,0.0,1,observed_historical_event
+580,2008-06-09 00:00:00,2008,6,0.5,-0.866,1,0,0,24.6596,93.9784,Manipur,monsoon,medium,landslide,1165.9,21.5,534.6,23,0.0,1,observed_historical_event
+8996,2016-07-14 00:00:00,2016,7,0.0,-1.0,1,0,0,26.1768,91.7702,Assam,monsoon,small,landslide,430.7,16.3,610.2,41,0.0,1,observed_historical_event
+7138,2015-07-07 00:00:00,2015,7,0.0,-1.0,1,0,0,27.0816,88.4397,Sikkim,continuous_rain,small,landslide,2752.6,32.1,642.8,30,0.0,1,observed_historical_event
+4857,2013-05-11 09:00:00,2013,5,0.866,-0.5,0,1,0,23.7281,92.7175,Mizoram,rain,large,landslide,1342.9,25.0,314.4,20,0.0,1,observed_historical_event
+6945,2015-06-19 00:00:00,2015,6,0.5,-0.866,1,0,0,25.16,93.686,Manipur,monsoon,medium,landslide,1355.8,31.7,525.8,29,0.0,1,observed_historical_event
+4860,2013-05-11 00:00:00,2013,5,0.866,-0.5,0,1,0,26.1016,91.6906,Assam,rain,medium,landslide,418.3,11.9,322.6,41,0.0,1,observed_historical_event
+4845,2013-05-07 00:00:00,2013,5,0.866,-0.5,0,1,0,24.2315,92.6755,Mizoram,rain,medium,mudslide,1367.5,34.3,323.7,9,0.0,1,observed_historical_event
+1770,2010-04-20 00:00:00,2010,4,1.0,0.0,0,1,0,26.1965,91.763,Assam,downpour,medium,landslide,476.3,14.9,240.2,41,0.0,1,observed_historical_event
+7728,2015-08-22 09:00:00,2015,8,-0.5,-0.866,1,0,0,26.1028,91.8806,Assam,continuous_rain,medium,landslide,211.2,12.0,533.3,40,0.0,1,observed_historical_event
+7836,2015-08-27 00:00:00,2015,8,-0.5,-0.866,1,0,0,24.042,92.6724,Mizoram,downpour,medium,landslide,1145.0,29.5,580.1,18,0.0,1,observed_historical_event
+4798,2013-04-07 00:00:00,2013,4,1.0,0.0,0,1,0,28.8254,96.1509,Arunachal Pradesh,rain,medium,landslide,2069.0,28.4,176.5,2,0.0,1,observed_historical_event
+7388,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,24.416,94.0984,Manipur,continuous_rain,medium,landslide,1063.5,32.0,526.6,16,0.0,1,observed_historical_event
+9619,2016-10-15 00:00:00,2016,10,-1.0,-0.0,0,0,1,27.1695,88.3664,Sikkim,rain,medium,landslide,2717.4,32.0,136.5,30,0.0,1,observed_historical_event
+7591,2015-03-19 00:00:00,2015,3,0.866,0.5,0,0,0,25.0318,92.4584,Assam,rain,small,landslide,205.4,13.4,86.3,14,0.0,1,observed_historical_event
+9232,2016-07-28 23:00:00,2016,7,0.0,-1.0,1,0,0,23.5397,93.3783,Mizoram,continuous_rain,medium,landslide,996.5,35.1,644.2,4,0.0,1,observed_historical_event
+4434,2012-06-25 18:00:00,2012,6,0.5,-0.866,1,0,0,26.1049,91.7369,Assam,downpour,large,landslide,366.2,17.6,603.8,41,0.0,1,observed_historical_event
+4378,2012-06-02 00:00:00,2012,6,0.5,-0.866,1,0,0,28.8254,96.1517,Arunachal Pradesh,downpour,medium,landslide,2069.9,28.5,610.2,2,0.0,1,observed_historical_event
+7214,2015-07-15 08:00:00,2015,7,0.0,-1.0,1,0,0,27.36,93.0385,Arunachal Pradesh,monsoon,medium,landslide,2206.1,40.0,600.5,1,0.0,1,observed_historical_event
+5582,2013-10-06 12:45:00,2013,10,-1.0,-0.0,0,0,1,26.1309,91.8383,Assam,downpour,medium,landslide,270.4,13.7,171.0,40,0.0,1,observed_historical_event
+3556,2011-05-31 14:00:00,2011,5,0.866,-0.5,0,1,0,25.1555,93.8474,Manipur,continuous_rain,small,landslide,1251.5,20.3,374.2,32,0.0,1,observed_historical_event
+2423,2010-09-13 00:00:00,2010,9,-0.866,-0.5,1,0,0,23.73504471,92.71060943,Mizoram,downpour,medium,landslide,1341.5,25.0,462.6,20,0.0,1,observed_historical_event
+3532,2011-05-24 00:00:00,2011,5,0.866,-0.5,0,1,0,25.0888,92.8551,Assam,downpour,medium,complex,310.1,16.7,407.1,17,0.0,1,observed_historical_event
+2345,2010-08-27 18:00:00,2010,8,-0.5,-0.866,1,0,0,27.3392,88.6188,Sikkim,downpour,medium,landslide,2946.6,41.7,577.0,31,0.0,1,observed_historical_event
+7956,2015-09-05 00:00:00,2015,9,-0.866,-0.5,1,0,0,26.048,91.8695,Meghalaya,unknown,medium,landslide,1034.2,33.0,313.8,39,0.0,1,observed_historical_event
+2425,2010-09-13 00:00:00,2010,9,-0.866,-0.5,1,0,0,23.3439,93.0748,Mizoram,downpour,medium,landslide,1032.2,27.4,440.8,5,0.0,1,observed_historical_event
+6970,2015-06-16 00:00:00,2015,6,0.5,-0.866,1,0,0,25.5084,90.2191,Meghalaya,downpour,small,rock_fall,1111.9,32.3,624.0,9,0.0,1,observed_historical_event
+5312,2013-08-11 23:00:00,2013,8,-0.5,-0.866,1,0,0,26.7103,94.693,Assam,downpour,very_large,landslide,532.9,16.3,576.4,4,0.0,1,observed_historical_event
+1929,2010-05-31 23:00:00,2010,5,0.866,-0.5,0,1,0,27.3543,88.6428,Sikkim,downpour,medium,landslide,2916.2,44.0,420.2,31,0.0,1,observed_historical_event
+2568,2010-10-08 00:00:00,2010,10,-1.0,-0.0,0,0,1,24.7679,93.4108,Assam,downpour,medium,landslide,494.0,19.3,187.2,23,0.0,1,observed_historical_event
+7409,2015-08-02 00:00:00,2015,8,-0.5,-0.866,1,0,0,25.72,94.6219,Nagaland,continuous_rain,medium,landslide,1477.2,34.2,537.7,11,0.0,1,observed_historical_event
+9219,2016-07-26 23:00:00,2016,7,0.0,-1.0,1,0,0,26.0101,94.5282,Nagaland,downpour,medium,landslide,1149.1,26.5,690.2,11,0.0,1,observed_historical_event
+8223,2015-09-14 03:10:00,2015,9,-0.866,-0.5,1,0,0,23.7348,92.7187,Mizoram,downpour,large,landslide,1336.7,24.5,451.6,20,0.0,1,observed_historical_event
+7336,2015-08-19 09:00:00,2015,8,-0.5,-0.866,1,0,0,25.2193,90.5549,Meghalaya,continuous_rain,medium,landslide,1542.7,27.2,521.8,5,0.0,1,observed_historical_event
+9252,2016-07-28 00:00:00,2016,7,0.0,-1.0,1,0,0,27.5748,91.8644,Arunachal Pradesh,monsoon,medium,landslide,1857.7,39.5,600.0,3,0.0,1,observed_historical_event
+7665,2015-08-11 00:00:00,2015,8,-0.5,-0.866,1,0,0,24.7016,93.5291,Manipur,continuous_rain,medium,landslide,1250.8,31.1,518.0,28,0.0,1,observed_historical_event
+1994,2010-06-16 00:00:00,2010,6,0.5,-0.866,1,0,0,25.0633,92.8025,Assam,downpour,medium,landslide,346.7,19.4,608.5,20,0.0,1,observed_historical_event
+7374,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,25.1122,94.3591,Manipur,continuous_rain,medium,landslide,1191.3,31.8,541.1,18,0.0,1,observed_historical_event
+4446,2012-07-05 00:00:00,2012,7,0.0,-1.0,1,0,0,28.9986,94.8885,Arunachal Pradesh,downpour,large,landslide,2220.2,39.0,692.6,2,0.0,1,observed_historical_event
+269,2007-09-18 00:00:00,2007,9,-0.866,-0.5,1,0,0,27.2872,88.2816,Sikkim,rain,medium,landslide,2804.4,33.5,366.1,30,0.0,1,observed_historical_event
+2205,2010-08-06 00:00:00,2010,8,-0.5,-0.866,1,0,0,23.7365,92.7146,Mizoram,downpour,medium,landslide,1337.9,24.6,566.9,20,0.0,1,observed_historical_event
+4610,2012-11-11 00:00:00,2012,11,-0.866,0.5,0,0,1,23.7705,92.5217,Mizoram,downpour,medium,landslide,1154.8,35.3,44.1,18,0.0,1,observed_historical_event
+6112,2014-06-28 09:00:00,2014,6,0.5,-0.866,1,0,0,26.1964,91.7652,Assam,rain,medium,landslide,472.9,14.6,496.9,41,0.0,1,observed_historical_event
+7390,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,24.4265,94.1913,Manipur,continuous_rain,medium,landslide,1171.5,23.4,541.4,16,0.0,1,observed_historical_event
+2420,2010-09-13 00:00:00,2010,9,-0.866,-0.5,1,0,0,23.72988966,92.71495623,Mizoram,downpour,medium,landslide,1343.2,25.0,453.4,20,0.0,1,observed_historical_event
+264,2007-09-13 00:00:00,2007,9,-0.866,-0.5,1,0,0,26.1833,91.8,Assam,rain,medium,landslide,401.5,12.1,364.5,41,0.0,1,observed_historical_event
+251,2007-09-09 00:00:00,2007,9,-0.866,-0.5,1,0,0,27.1667,88.35,Sikkim,rain,medium,landslide,2690.0,32.3,350.4,30,0.0,1,observed_historical_event
+6214,2014-10-05 17:45:00,2014,10,-1.0,-0.0,0,0,1,25.9702,91.8587,Meghalaya,rain,medium,landslide,1101.5,30.2,135.4,42,0.0,1,observed_historical_event
+4411,2012-06-14 04:00:00,2012,6,0.5,-0.866,1,0,0,27.339,88.6065,Sikkim,downpour,medium,landslide,2964.2,40.4,623.2,31,0.0,1,observed_historical_event
+7384,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,23.9278,94.0906,Manipur,rain,medium,landslide,1020.5,20.9,453.0,8,0.0,1,observed_historical_event
+211,2007-08-26 00:00:00,2007,8,-0.5,-0.866,1,0,0,24.9667,93.55,Manipur,continuous_rain,medium,mudslide,1003.6,32.0,530.1,35,0.0,1,observed_historical_event
+4384,2012-06-03 00:00:00,2012,6,0.5,-0.866,1,0,0,25.1775,93.0123,Assam,downpour,medium,landslide,450.5,19.8,617.7,19,0.0,1,observed_historical_event
+4383,2012-06-03 00:00:00,2012,6,0.5,-0.866,1,0,0,25.3056,93.1265,Assam,downpour,medium,landslide,657.0,13.3,600.4,18,0.0,1,observed_historical_event
+7375,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,25.1941,94.4481,Manipur,continuous_rain,medium,landslide,1211.9,20.8,531.1,18,0.0,1,observed_historical_event
+4861,2013-05-12 00:00:00,2013,5,0.866,-0.5,0,1,0,24.9926,93.4946,Assam,rain,medium,mudslide,189.8,19.0,324.6,28,0.0,1,observed_historical_event
+7972,2015-08-28 01:45:00,2015,8,-0.5,-0.866,1,0,0,23.4495,92.8112,Mizoram,downpour,large,landslide,948.9,32.5,576.8,18,0.0,1,observed_historical_event
+3831,2011-07-22 00:00:00,2011,7,0.0,-1.0,1,0,0,24.7992,93.948,Manipur,downpour,medium,landslide,1206.0,25.4,689.9,33,0.0,1,observed_historical_event
+5584,2013-10-06 00:00:00,2013,10,-1.0,-0.0,0,0,1,26.1665,91.7049,Assam,downpour,medium,landslide,500.4,19.7,188.0,42,0.0,1,observed_historical_event
+7387,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,24.954,94.2156,Manipur,continuous_rain,small,landslide,1185.2,31.3,518.5,23,0.0,1,observed_historical_event
+2573,2010-10-09 00:00:00,2010,10,-1.0,-0.0,0,0,1,25.1796,93.0083,Assam,downpour,medium,mudslide,449.4,19.7,168.6,19,0.0,1,observed_historical_event
+9010,2016-07-16 00:00:00,2016,7,0.0,-1.0,1,0,0,27.3034,93.804,Arunachal Pradesh,downpour,medium,mudslide,2287.9,34.1,700.9,8,0.0,1,observed_historical_event
+6331,2014-09-08 00:00:00,2014,9,-0.866,-0.5,1,0,0,25.9466,94.6279,Nagaland,unknown,medium,mudslide,1331.7,26.3,316.9,10,0.0,1,observed_historical_event
+1987,2010-06-15 00:00:00,2010,6,0.5,-0.866,1,0,0,25.2269,93.1658,Assam,downpour,medium,landslide,695.4,9.3,604.9,27,0.0,1,observed_historical_event
+7910,2015-08-01 00:00:00,2015,8,-0.5,-0.866,1,0,0,24.3481,94.1146,Manipur,unknown,medium,landslide,1195.4,28.8,383.0,15,0.0,1,observed_historical_event
+6775,2015-02-14 00:00:00,2015,2,0.5,0.866,0,0,0,26.1468,91.6469,Assam,mining,small,landslide,509.4,12.1,37.3,42,0.0,1,observed_historical_event
+6786,2015-02-19 23:00:00,2015,2,0.5,0.866,0,0,0,24.6108,92.562,Assam,mining,medium,landslide,475.8,13.0,21.2,10,0.0,1,observed_historical_event
+6291,2014-09-21 00:00:00,2014,9,-0.866,-0.5,1,0,0,25.7354,90.3852,Meghalaya,continuous_rain,large,landslide,1336.0,23.8,423.4,7,0.0,1,observed_historical_event
+6213,2014-09-24 00:00:00,2014,9,-0.866,-0.5,1,0,0,25.8143,90.5763,Meghalaya,continuous_rain,large,landslide,1561.8,28.6,424.0,4,0.0,1,observed_historical_event
+9336,2016-05-18 08:00:00,2016,5,0.866,-0.5,0,1,0,24.5308,92.5121,Assam,continuous_rain,small,landslide,281.3,11.8,378.5,9,0.0,1,observed_historical_event
+9604,2016-10-12 00:00:00,2016,10,-1.0,-0.0,0,0,1,27.2676,88.2891,Sikkim,continuous_rain,medium,landslide,2782.4,32.7,166.6,30,0.0,1,observed_historical_event
+7837,2015-08-27 00:00:00,2015,8,-0.5,-0.866,1,0,0,23.7269,92.7265,Mizoram,downpour,medium,landslide,1337.1,24.5,568.6,20,0.0,1,observed_historical_event
+7267,2015-07-22 00:00:00,2015,7,0.0,-1.0,1,0,0,25.3908,94.0926,Manipur,continuous_rain,small,landslide,1172.3,31.3,661.4,24,0.0,1,observed_historical_event
+4848,2013-05-08 00:00:00,2013,5,0.866,-0.5,0,1,0,24.0896,91.4663,Tripura,rain,medium,landslide,211.6,6.7,317.1,2,0.0,1,observed_historical_event
+9122,2016-07-20 00:00:00,2016,7,0.0,-1.0,1,0,0,26.1966,91.802,Assam,rain,medium,landslide,422.7,10.4,559.9,40,0.0,1,observed_historical_event
+2574,2010-10-09 00:00:00,2010,10,-1.0,-0.0,0,0,1,25.4749,93.1477,Assam,downpour,medium,landslide,423.4,10.9,170.0,13,0.0,1,observed_historical_event
+6282,2014-09-22 00:00:00,2014,9,-0.866,-0.5,1,0,0,26.1097,91.7747,Assam,rain,small,landslide,317.9,20.0,356.4,41,0.0,1,observed_historical_event
+6289,2014-09-22 00:00:00,2014,9,-0.866,-0.5,1,0,0,26.1001,91.6849,Assam,rain,small,landslide,422.0,11.2,363.3,41,0.0,1,observed_historical_event
+9087,2016-07-19 00:00:00,2016,7,0.0,-1.0,1,0,0,28.235,94.9612,Arunachal Pradesh,downpour,medium,landslide,1953.8,38.8,693.5,2,0.0,1,observed_historical_event
+130,2007-07-19 00:00:00,2007,7,0.0,-1.0,1,0,0,26.1699,91.7986,Assam,rain,medium,landslide,379.2,13.8,549.9,41,0.0,1,observed_historical_event
+500001,2016-12-03 00:00:00,2016,12,-0.5,0.866,0,0,0,24.13633,93.6133,Assam,none,none,non_event,564.4,8.4,11.5,3,40.17,0,constructed_pseudo_absence
+500002,2010-04-06 00:00:00,2010,4,1.0,0.0,0,1,0,25.57319,94.58556,Manipur,none,none,non_event,1000.5,26.9,116.1,13,15.3,0,constructed_pseudo_absence
+500003,2015-01-27 00:00:00,2015,1,0.0,1.0,0,0,0,23.49036,93.38468,Mizoram,none,none,non_event,914.9,30.9,24.5,3,5.52,0,constructed_pseudo_absence
+500004,2008-12-24 00:00:00,2008,12,-0.5,0.866,0,0,0,27.76183,90.54603,Assam,none,none,non_event,578.5,10.9,5.7,0,130.67,0,constructed_pseudo_absence
+500005,2011-06-09 00:00:00,2011,6,0.5,-0.866,1,0,0,25.78937,90.41079,Meghalaya,none,none,non_event,1393.4,23.8,375.2,6,6.53,0,constructed_pseudo_absence
+500006,2007-01-25 00:00:00,2007,1,0.0,1.0,0,0,0,26.57371,94.92489,Assam,none,none,non_event,267.8,8.0,23.4,4,19.25,0,constructed_pseudo_absence
+500007,2013-08-04 00:00:00,2013,8,-0.5,-0.866,1,0,0,25.20834,93.99302,Manipur,none,none,non_event,1198.6,28.6,236.8,26,8.75,0,constructed_pseudo_absence
+500008,2016-07-14 00:00:00,2016,7,0.0,-1.0,1,0,0,24.83662,94.50227,Manipur,none,none,non_event,1140.5,21.6,283.1,9,8.7,0,constructed_pseudo_absence
+500009,2010-10-12 00:00:00,2010,10,-1.0,-0.0,0,0,1,29.20688,92.73945,Arunachal Pradesh,none,none,non_event,2040.7,39.2,110.9,0,150.25,0,constructed_pseudo_absence
+500010,2010-12-26 00:00:00,2010,12,-0.5,0.866,0,0,0,28.07122,88.67453,Sikkim,none,none,non_event,2628.8,34.1,22.0,0,50.61,0,constructed_pseudo_absence
+500011,2013-11-28 00:00:00,2013,11,-0.866,0.5,0,0,1,27.12015,96.95448,Arunachal Pradesh,none,none,non_event,2014.3,31.9,20.4,0,84.93,0,constructed_pseudo_absence
+500012,2007-12-08 00:00:00,2007,12,-0.5,0.866,0,0,0,25.29601,93.19457,Manipur,none,none,non_event,1458.5,31.2,20.4,23,6.93,0,constructed_pseudo_absence
+500013,2010-02-22 00:00:00,2010,2,0.5,0.866,0,0,0,25.74934,94.81116,Nagaland,none,none,non_event,1641.3,26.0,13.6,8,13.7,0,constructed_pseudo_absence
+500014,2015-04-27 00:00:00,2015,4,1.0,0.0,0,1,0,27.87087,91.45849,Assam,none,none,non_event,542.8,8.9,131.5,0,50.84,0,constructed_pseudo_absence
+500015,2016-12-09 00:00:00,2016,12,-0.5,0.866,0,0,0,27.52045,91.34566,Assam,none,none,non_event,278.9,18.6,11.7,0,50.83,0,constructed_pseudo_absence
+500016,2016-12-04 00:00:00,2016,12,-0.5,0.866,0,0,0,26.51138,93.89599,Nagaland,none,none,non_event,1232.2,38.0,12.6,0,51.62,0,constructed_pseudo_absence
+500017,2015-12-18 00:00:00,2015,12,-0.5,0.866,0,0,0,22.0154,92.72327,Mizoram,none,none,non_event,1245.0,35.9,23.0,0,57.33,0,constructed_pseudo_absence
+500018,2012-09-22 00:00:00,2012,9,-0.866,-0.5,1,0,0,25.40064,90.00992,Meghalaya,none,none,non_event,1388.8,32.5,270.5,5,13.69,0,constructed_pseudo_absence
+500019,2012-04-10 00:00:00,2012,4,1.0,0.0,0,1,0,23.21852,93.00027,Mizoram,none,none,non_event,1135.7,27.6,113.8,4,15.88,0,constructed_pseudo_absence
+500020,2016-08-13 00:00:00,2016,8,-0.5,-0.866,1,0,0,27.74505,88.81252,Sikkim,none,none,non_event,2702.0,38.5,279.3,14,20.85,0,constructed_pseudo_absence
+500021,2016-10-15 00:00:00,2016,10,-1.0,-0.0,0,0,1,22.44647,93.14291,Mizoram,none,none,non_event,1082.8,27.5,91.4,3,18.43,0,constructed_pseudo_absence
+500022,2009-10-10 00:00:00,2009,10,-1.0,-0.0,0,0,1,24.16998,92.2518,Tripura,none,none,non_event,422.9,9.0,93.5,6,40.88,0,constructed_pseudo_absence
+500023,2010-10-08 00:00:00,2010,10,-1.0,-0.0,0,0,1,25.3681,95.1088,Nagaland,none,none,non_event,1372.9,32.4,93.6,0,51.27,0,constructed_pseudo_absence
+500024,2008-05-21 00:00:00,2008,5,0.866,-0.5,0,1,0,27.31004,94.3033,Arunachal Pradesh,none,none,non_event,2320.1,37.7,218.4,4,20.32,0,constructed_pseudo_absence
+500025,2007-12-28 00:00:00,2007,12,-0.5,0.866,0,0,0,27.54381,88.21959,Sikkim,none,none,non_event,2588.6,38.5,2.5,18,22.5,0,constructed_pseudo_absence
+500026,2015-05-18 00:00:00,2015,5,0.866,-0.5,0,1,0,27.24073,88.7237,Sikkim,none,none,non_event,2710.3,42.3,189.6,31,10.63,0,constructed_pseudo_absence
+500027,2015-12-20 00:00:00,2015,12,-0.5,0.866,0,0,0,23.11334,91.65757,Tripura,none,none,non_event,480.9,17.3,16.8,1,12.66,0,constructed_pseudo_absence
+500028,2015-05-18 00:00:00,2015,5,0.866,-0.5,0,1,0,23.88024,91.96313,Tripura,none,none,non_event,80.0,6.0,191.7,1,20.76,0,constructed_pseudo_absence
+500029,2011-11-17 00:00:00,2011,11,-0.866,0.5,0,0,1,23.62011,92.00213,Tripura,none,none,non_event,317.4,13.4,17.6,1,39.58,0,constructed_pseudo_absence
+500030,2011-03-18 00:00:00,2011,3,0.866,0.5,0,0,0,23.02397,91.44287,Tripura,none,none,non_event,149.5,16.6,31.4,1,28.12,0,constructed_pseudo_absence
+500031,2008-04-11 00:00:00,2008,4,1.0,0.0,0,1,0,27.76334,88.63578,Sikkim,none,none,non_event,2798.7,37.6,118.8,15,16.5,0,constructed_pseudo_absence
+500032,2016-12-01 00:00:00,2016,12,-0.5,0.866,0,0,0,25.91618,90.96843,Meghalaya,none,none,non_event,1293.7,30.0,19.3,2,40.28,0,constructed_pseudo_absence
+500033,2011-11-28 00:00:00,2011,11,-0.866,0.5,0,0,1,27.52468,88.84847,Sikkim,none,none,non_event,2692.1,40.6,36.8,18,18.52,0,constructed_pseudo_absence
+500034,2014-01-11 00:00:00,2014,1,0.0,1.0,0,0,0,25.53705,90.61881,Meghalaya,none,none,non_event,1260.3,22.0,21.7,7,31.12,0,constructed_pseudo_absence
+500035,2016-07-13 00:00:00,2016,7,0.0,-1.0,1,0,0,25.39696,94.65517,Manipur,none,none,non_event,1216.7,30.6,370.0,9,6.21,0,constructed_pseudo_absence
+500036,2014-02-09 00:00:00,2014,2,0.5,0.866,0,0,0,26.60672,90.55491,Assam,none,none,non_event,425.8,11.7,12.4,0,75.57,0,constructed_pseudo_absence
+500037,2011-11-27 00:00:00,2011,11,-0.866,0.5,0,0,1,25.8075,94.97132,Nagaland,none,none,non_event,1457.2,33.8,31.8,5,19.96,0,constructed_pseudo_absence
+500038,2012-02-03 00:00:00,2012,2,0.5,0.866,0,0,0,22.93101,91.7473,Tripura,none,none,non_event,125.1,13.2,26.9,1,9.69,0,constructed_pseudo_absence
+500039,2007-09-08 00:00:00,2007,9,-0.866,-0.5,1,0,0,29.35387,92.67623,Arunachal Pradesh,none,none,non_event,2276.8,36.4,190.9,0,167.53,0,constructed_pseudo_absence
+500040,2012-02-20 00:00:00,2012,2,0.5,0.866,0,0,0,25.51154,90.56873,Meghalaya,none,none,non_event,1270.4,28.2,30.1,8,30.95,0,constructed_pseudo_absence
+500041,2007-12-19 00:00:00,2007,12,-0.5,0.866,0,0,0,25.63297,93.19458,Manipur,none,none,non_event,1278.2,32.0,23.4,6,12.76,0,constructed_pseudo_absence
+500042,2016-10-21 00:00:00,2016,10,-1.0,-0.0,0,0,1,28.03562,88.1785,Sikkim,none,none,non_event,2658.3,35.1,83.6,0,66.35,0,constructed_pseudo_absence
+500043,2008-11-19 00:00:00,2008,11,-0.866,0.5,0,0,1,24.11076,92.92049,Mizoram,none,none,non_event,1027.6,29.2,23.4,20,23.27,0,constructed_pseudo_absence
+500044,2012-01-14 00:00:00,2012,1,0.0,1.0,0,0,0,27.72767,88.06206,Sikkim,none,none,non_event,2805.9,35.4,5.2,1,46.38,0,constructed_pseudo_absence
+500045,2009-05-24 00:00:00,2009,5,0.866,-0.5,0,1,0,26.34405,94.87454,Nagaland,none,none,non_event,1577.4,27.2,211.4,5,34.98,0,constructed_pseudo_absence
+500046,2016-03-28 00:00:00,2016,3,0.866,0.5,0,0,0,23.6438,92.09088,Tripura,none,none,non_event,462.6,15.7,54.7,2,44.01,0,constructed_pseudo_absence
+500047,2014-08-22 00:00:00,2014,8,-0.5,-0.866,1,0,0,24.19224,92.49264,Mizoram,none,none,non_event,1171.9,32.9,256.9,10,19.05,0,constructed_pseudo_absence
+500048,2011-04-20 00:00:00,2011,4,1.0,0.0,0,1,0,25.52731,93.70303,Nagaland,none,none,non_event,1366.2,31.2,124.2,14,17.81,0,constructed_pseudo_absence
+500049,2010-10-16 00:00:00,2010,10,-1.0,-0.0,0,0,1,28.09822,92.62723,Arunachal Pradesh,none,none,non_event,2070.8,39.9,85.3,1,48.0,0,constructed_pseudo_absence
+500050,2007-01-08 00:00:00,2007,1,0.0,1.0,0,0,0,23.93344,91.68899,Tripura,none,none,non_event,195.8,13.4,6.5,2,8.18,0,constructed_pseudo_absence
+500051,2013-12-18 00:00:00,2013,12,-0.5,0.866,0,0,0,26.05187,94.30875,Nagaland,none,none,non_event,1339.4,36.1,15.6,10,14.4,0,constructed_pseudo_absence
+500052,2010-03-24 00:00:00,2010,3,0.866,0.5,0,0,0,22.69722,92.47665,Mizoram,none,none,non_event,1133.4,26.2,57.0,2,37.5,0,constructed_pseudo_absence
+500053,2011-10-25 00:00:00,2011,10,-1.0,-0.0,0,0,1,24.16393,94.32949,Manipur,none,none,non_event,1388.0,31.4,85.1,13,21.03,0,constructed_pseudo_absence
+500054,2012-02-01 00:00:00,2012,2,0.5,0.866,0,0,0,27.34725,91.56635,Assam,none,none,non_event,685.6,13.5,13.1,3,38.61,0,constructed_pseudo_absence
+500055,2009-09-25 00:00:00,2009,9,-0.866,-0.5,1,0,0,29.42546,94.76482,Arunachal Pradesh,none,none,non_event,2361.8,39.6,235.6,1,48.96,0,constructed_pseudo_absence
+500056,2009-12-09 00:00:00,2009,12,-0.5,0.866,0,0,0,23.12043,92.72856,Mizoram,none,none,non_event,1322.7,24.0,12.5,4,27.01,0,constructed_pseudo_absence
+500057,2007-02-26 00:00:00,2007,2,0.5,0.866,0,0,0,25.66276,90.16672,Assam,none,none,non_event,494.5,8.3,16.3,7,16.87,0,constructed_pseudo_absence
+500058,2016-08-20 00:00:00,2016,8,-0.5,-0.866,1,0,0,25.1303,92.09333,Meghalaya,none,none,non_event,1385.8,32.5,248.4,7,26.8,0,constructed_pseudo_absence
+500059,2016-12-10 00:00:00,2016,12,-0.5,0.866,0,0,0,24.35361,91.45682,Tripura,none,none,non_event,180.7,7.5,2.0,1,29.37,0,constructed_pseudo_absence
+500060,2010-03-03 00:00:00,2010,3,0.866,0.5,0,0,0,27.7956,91.00906,Assam,none,none,non_event,574.2,19.2,33.7,0,86.86,0,constructed_pseudo_absence
+500061,2016-05-02 00:00:00,2016,5,0.866,-0.5,0,1,0,24.71048,92.27366,Assam,none,none,non_event,605.9,18.3,184.4,9,16.37,0,constructed_pseudo_absence
+500062,2011-11-21 00:00:00,2011,11,-0.866,0.5,0,0,1,23.01389,91.38011,Tripura,none,none,non_event,87.9,16.3,32.8,1,34.52,0,constructed_pseudo_absence
+500063,2009-12-27 00:00:00,2009,12,-0.5,0.866,0,0,0,25.46765,91.43369,Meghalaya,none,none,non_event,1100.0,31.8,2.0,2,45.12,0,constructed_pseudo_absence
+500064,2011-05-15 00:00:00,2011,5,0.866,-0.5,0,1,0,23.44711,93.18909,Mizoram,none,none,non_event,1071.6,36.0,229.0,6,16.36,0,constructed_pseudo_absence
+500065,2008-08-14 00:00:00,2008,8,-0.5,-0.866,1,0,0,23.20123,92.79255,Mizoram,none,none,non_event,1261.0,35.9,319.9,4,17.35,0,constructed_pseudo_absence
+500066,2016-08-01 00:00:00,2016,8,-0.5,-0.866,1,0,0,26.86485,97.17528,Arunachal Pradesh,none,none,non_event,2139.3,28.8,357.7,0,115.91,0,constructed_pseudo_absence
+500067,2009-05-21 00:00:00,2009,5,0.866,-0.5,0,1,0,23.39824,93.11573,Mizoram,none,none,non_event,1024.5,25.8,194.3,5,7.35,0,constructed_pseudo_absence
+500068,2008-05-14 00:00:00,2008,5,0.866,-0.5,0,1,0,27.69826,88.44255,Sikkim,none,none,non_event,2814.1,32.5,193.4,17,23.15,0,constructed_pseudo_absence
+500069,2011-10-13 00:00:00,2011,10,-1.0,-0.0,0,0,1,24.42663,94.24861,Manipur,none,none,non_event,1197.9,20.0,103.9,13,5.8,0,constructed_pseudo_absence
+500070,2008-12-13 00:00:00,2008,12,-0.5,0.866,0,0,0,23.0409,91.40288,Tripura,none,none,non_event,145.0,17.8,20.9,1,32.33,0,constructed_pseudo_absence
+500071,2013-01-17 00:00:00,2013,1,0.0,1.0,0,0,0,28.50722,94.7013,Arunachal Pradesh,none,none,non_event,2231.0,39.5,19.1,2,37.52,0,constructed_pseudo_absence
+500072,2015-02-10 00:00:00,2015,2,0.5,0.866,0,0,0,24.11598,91.34427,Tripura,none,none,non_event,188.4,11.2,25.0,2,12.73,0,constructed_pseudo_absence
+500073,2010-10-10 00:00:00,2010,10,-1.0,-0.0,0,0,1,24.21259,93.66914,Assam,none,none,non_event,694.6,19.9,92.9,9,39.28,0,constructed_pseudo_absence
+500074,2008-05-04 00:00:00,2008,5,0.866,-0.5,0,1,0,24.97633,95.00086,Assam,none,none,non_event,195.9,10.5,211.3,0,53.42,0,constructed_pseudo_absence
+500075,2014-12-08 00:00:00,2014,12,-0.5,0.866,0,0,0,23.22307,92.52811,Mizoram,none,none,non_event,1194.1,31.9,2.1,2,30.43,0,constructed_pseudo_absence
+500076,2009-12-09 00:00:00,2009,12,-0.5,0.866,0,0,0,26.01405,91.32472,Meghalaya,none,none,non_event,1058.8,28.0,21.2,26,7.31,0,constructed_pseudo_absence
+500077,2007-03-10 00:00:00,2007,3,0.866,0.5,0,0,0,26.88165,94.2647,Nagaland,none,none,non_event,1644.1,27.9,59.3,4,40.82,0,constructed_pseudo_absence
+500078,2014-04-18 00:00:00,2014,4,1.0,0.0,0,1,0,24.28442,91.63586,Tripura,none,none,non_event,472.5,11.5,130.2,2,27.66,0,constructed_pseudo_absence
+500079,2010-08-08 00:00:00,2010,8,-0.5,-0.866,1,0,0,26.76528,95.16347,Nagaland,none,none,non_event,1500.4,35.9,331.6,3,14.62,0,constructed_pseudo_absence
+500080,2013-04-22 00:00:00,2013,4,1.0,0.0,0,1,0,26.54047,94.63993,Nagaland,none,none,non_event,1260.3,26.1,138.7,5,19.61,0,constructed_pseudo_absence
+500081,2015-12-11 00:00:00,2015,12,-0.5,0.866,0,0,0,24.74112,93.06664,Manipur,none,none,non_event,1345.6,25.8,22.1,24,9.01,0,constructed_pseudo_absence
+500082,2007-10-14 00:00:00,2007,10,-1.0,-0.0,0,0,1,23.05954,92.19253,Tripura,none,none,non_event,394.7,7.3,116.8,1,48.89,0,constructed_pseudo_absence
+500083,2012-09-13 00:00:00,2012,9,-0.866,-0.5,1,0,0,25.93101,95.80598,Assam,none,none,non_event,545.6,14.0,252.3,0,102.41,0,constructed_pseudo_absence
+500084,2014-12-02 00:00:00,2014,12,-0.5,0.866,0,0,0,28.04955,88.56412,Sikkim,none,none,non_event,2809.1,43.6,5.1,1,49.06,0,constructed_pseudo_absence
+500085,2013-12-25 00:00:00,2013,12,-0.5,0.866,0,0,0,24.49331,93.09612,Mizoram,none,none,non_event,989.9,35.7,21.1,11,20.93,0,constructed_pseudo_absence
+500086,2007-01-26 00:00:00,2007,1,0.0,1.0,0,0,0,23.16618,91.45936,Tripura,none,none,non_event,345.1,7.5,7.5,1,31.37,0,constructed_pseudo_absence
+500087,2016-10-06 00:00:00,2016,10,-1.0,-0.0,0,0,1,27.16013,88.47805,Sikkim,none,none,non_event,2811.1,41.1,65.1,30,5.23,0,constructed_pseudo_absence
+500088,2016-02-15 00:00:00,2016,2,0.5,0.866,0,0,0,27.68168,88.21675,Sikkim,none,none,non_event,2570.3,35.0,20.8,5,37.8,0,constructed_pseudo_absence
+500089,2011-10-06 00:00:00,2011,10,-1.0,-0.0,0,0,1,29.20683,94.24499,Arunachal Pradesh,none,none,non_event,2072.8,32.5,82.7,0,66.67,0,constructed_pseudo_absence
+500090,2011-05-10 00:00:00,2011,5,0.866,-0.5,0,1,0,23.56124,92.70917,Mizoram,none,none,non_event,1209.9,33.5,173.1,19,16.21,0,constructed_pseudo_absence
+500091,2012-08-23 00:00:00,2012,8,-0.5,-0.866,1,0,0,23.07065,91.55764,Tripura,none,none,non_event,384.5,7.7,269.2,1,17.53,0,constructed_pseudo_absence
+500092,2007-12-24 00:00:00,2007,12,-0.5,0.866,0,0,0,27.30193,88.50934,Sikkim,none,none,non_event,3033.4,33.4,21.3,31,9.71,0,constructed_pseudo_absence
+500093,2012-02-07 00:00:00,2012,2,0.5,0.866,0,0,0,23.91693,92.47614,Mizoram,none,none,non_event,875.8,30.4,26.1,17,16.93,0,constructed_pseudo_absence
+500094,2007-03-15 00:00:00,2007,3,0.866,0.5,0,0,0,24.99367,94.62613,Manipur,none,none,non_event,1030.2,20.0,35.6,12,17.71,0,constructed_pseudo_absence
+500095,2013-02-05 00:00:00,2013,2,0.5,0.866,0,0,0,23.97125,93.5312,Manipur,none,none,non_event,971.6,26.8,32.5,1,45.89,0,constructed_pseudo_absence
+500096,2009-03-27 00:00:00,2009,3,0.866,0.5,0,0,0,26.15553,95.03563,Nagaland,none,none,non_event,1236.7,26.0,71.4,2,40.46,0,constructed_pseudo_absence
+500097,2008-05-03 00:00:00,2008,5,0.866,-0.5,0,1,0,23.84105,92.60646,Mizoram,none,none,non_event,1148.6,24.9,182.0,20,11.66,0,constructed_pseudo_absence
+500098,2012-01-13 00:00:00,2012,1,0.0,1.0,0,0,0,28.064,88.72413,Sikkim,none,none,non_event,2598.9,32.0,11.7,0,50.2,0,constructed_pseudo_absence
+500099,2011-08-27 00:00:00,2011,8,-0.5,-0.866,1,0,0,23.48974,91.99881,Tripura,none,none,non_event,102.1,8.1,300.9,0,51.56,0,constructed_pseudo_absence
+500100,2015-03-20 00:00:00,2015,3,0.866,0.5,0,0,0,25.51862,91.65864,Meghalaya,none,none,non_event,1263.4,27.5,32.4,2,21.86,0,constructed_pseudo_absence
+500101,2013-01-02 00:00:00,2013,1,0.0,1.0,0,0,0,24.35502,91.46263,Tripura,none,none,non_event,185.6,7.0,10.8,1,29.52,0,constructed_pseudo_absence
+500102,2015-02-15 00:00:00,2015,2,0.5,0.866,0,0,0,23.08579,91.38176,Tripura,none,none,non_event,212.5,16.6,30.7,1,35.27,0,constructed_pseudo_absence
+500103,2013-10-27 00:00:00,2013,10,-1.0,-0.0,0,0,1,27.64607,88.65394,Sikkim,none,none,non_event,2608.6,43.6,86.8,15,3.34,0,constructed_pseudo_absence
+500104,2014-05-08 00:00:00,2014,5,0.866,-0.5,0,1,0,21.98506,92.64464,Mizoram,none,none,non_event,1200.1,25.8,230.3,0,64.17,0,constructed_pseudo_absence
+500105,2012-01-09 00:00:00,2012,1,0.0,1.0,0,0,0,26.18004,95.1579,Nagaland,none,none,non_event,1391.3,38.0,2.3,0,50.79,0,constructed_pseudo_absence
+500106,2016-12-02 00:00:00,2016,12,-0.5,0.866,0,0,0,23.04668,91.35453,Tripura,none,none,non_event,146.5,16.9,6.0,1,37.31,0,constructed_pseudo_absence
+500107,2015-02-07 00:00:00,2015,2,0.5,0.866,0,0,0,25.29526,93.36937,Manipur,none,none,non_event,1286.6,20.1,16.7,22,21.5,0,constructed_pseudo_absence
+500108,2011-12-05 00:00:00,2011,12,-0.5,0.866,0,0,0,25.29842,94.07277,Manipur,none,none,non_event,1276.5,24.9,14.3,25,10.46,0,constructed_pseudo_absence
+500109,2009-01-26 00:00:00,2009,1,0.0,1.0,0,0,0,24.00886,94.55961,Manipur,none,none,non_event,981.6,29.0,17.1,4,44.02,0,constructed_pseudo_absence
+500110,2013-07-24 00:00:00,2013,7,0.0,-1.0,1,0,0,27.10531,91.80915,Arunachal Pradesh,none,none,non_event,1885.0,33.4,275.9,0,52.49,0,constructed_pseudo_absence
+500111,2015-02-20 00:00:00,2015,2,0.5,0.866,0,0,0,26.12383,93.5072,Nagaland,none,none,non_event,1203.4,26.3,23.7,1,49.33,0,constructed_pseudo_absence
+500112,2007-12-28 00:00:00,2007,12,-0.5,0.866,0,0,0,23.09091,93.35683,Mizoram,none,none,non_event,1152.5,24.8,15.4,2,40.27,0,constructed_pseudo_absence
+500113,2008-03-05 00:00:00,2008,3,0.866,0.5,0,0,0,24.03984,91.63227,Tripura,none,none,non_event,291.7,17.7,34.1,2,17.74,0,constructed_pseudo_absence
+500114,2011-05-20 00:00:00,2011,5,0.866,-0.5,0,1,0,25.88563,94.43504,Nagaland,none,none,non_event,1381.9,31.7,206.0,14,16.68,0,constructed_pseudo_absence
+500115,2015-10-07 00:00:00,2015,10,-1.0,-0.0,0,0,1,27.42589,93.80077,Assam,none,none,non_event,625.7,9.8,96.3,8,13.62,0,constructed_pseudo_absence
+500116,2013-10-11 00:00:00,2013,10,-1.0,-0.0,0,0,1,27.37282,88.40815,Sikkim,none,none,non_event,3016.4,36.4,90.6,31,14.9,0,constructed_pseudo_absence
+500117,2014-01-27 00:00:00,2014,1,0.0,1.0,0,0,0,26.91647,94.60496,Nagaland,none,none,non_event,1433.4,26.5,9.5,3,24.53,0,constructed_pseudo_absence
+500118,2016-12-18 00:00:00,2016,12,-0.5,0.866,0,0,0,26.66118,94.3571,Nagaland,none,none,non_event,1357.7,37.8,2.0,2,33.82,0,constructed_pseudo_absence
+500119,2013-12-24 00:00:00,2013,12,-0.5,0.866,0,0,0,26.77249,95.08815,Nagaland,none,none,non_event,1415.6,28.3,4.0,3,8.45,0,constructed_pseudo_absence
+500120,2010-02-16 00:00:00,2010,2,0.5,0.866,0,0,0,22.81428,92.8935,Mizoram,none,none,non_event,931.7,35.6,8.4,3,12.0,0,constructed_pseudo_absence
+500121,2010-11-28 00:00:00,2010,11,-0.866,0.5,0,0,1,25.40679,93.82928,Nagaland,none,none,non_event,1414.6,30.5,31.6,17,12.51,0,constructed_pseudo_absence
+500122,2011-01-09 00:00:00,2011,1,0.0,1.0,0,0,0,28.36609,95.3812,Arunachal Pradesh,none,none,non_event,2295.0,30.5,9.7,1,43.63,0,constructed_pseudo_absence
+500123,2009-08-13 00:00:00,2009,8,-0.5,-0.866,1,0,0,25.83184,93.64467,Nagaland,none,none,non_event,1598.4,37.6,232.5,4,17.56,0,constructed_pseudo_absence
+500124,2013-04-11 00:00:00,2013,4,1.0,0.0,0,1,0,26.8661,94.62985,Arunachal Pradesh,none,none,non_event,2224.0,28.0,94.6,3,18.42,0,constructed_pseudo_absence
+500125,2008-12-05 00:00:00,2008,12,-0.5,0.866,0,0,0,26.5983,94.37843,Nagaland,none,none,non_event,1257.4,34.9,12.7,4,33.65,0,constructed_pseudo_absence
+500126,2014-09-14 00:00:00,2014,9,-0.866,-0.5,1,0,0,25.1612,93.87021,Assam,none,none,non_event,478.6,10.1,209.0,33,2.38,0,constructed_pseudo_absence
+500127,2016-06-22 00:00:00,2016,6,0.5,-0.866,1,0,0,25.44617,90.39861,Assam,none,none,non_event,291.5,8.0,271.9,8,19.3,0,constructed_pseudo_absence
+500128,2010-11-25 00:00:00,2010,11,-0.866,0.5,0,0,1,26.62229,93.27837,Arunachal Pradesh,none,none,non_event,2047.3,29.0,17.4,1,27.64,0,constructed_pseudo_absence
+500129,2009-04-23 00:00:00,2009,4,1.0,0.0,0,1,0,28.04242,94.04086,Arunachal Pradesh,none,none,non_event,1952.5,30.4,104.9,1,47.37,0,constructed_pseudo_absence
+500130,2007-05-15 00:00:00,2007,5,0.866,-0.5,0,1,0,25.32974,94.93735,Nagaland,none,none,non_event,1456.2,26.6,255.8,3,35.31,0,constructed_pseudo_absence
+500131,2013-03-13 00:00:00,2013,3,0.866,0.5,0,0,0,27.63074,88.63855,Sikkim,none,none,non_event,2623.5,41.4,34.3,16,2.55,0,constructed_pseudo_absence
+500132,2008-05-04 00:00:00,2008,5,0.866,-0.5,0,1,0,24.23124,92.20372,Tripura,none,none,non_event,496.4,7.8,182.6,4,39.18,0,constructed_pseudo_absence
+500133,2012-02-25 00:00:00,2012,2,0.5,0.866,0,0,0,25.64349,91.65473,Assam,none,none,non_event,541.6,18.3,18.0,6,22.49,0,constructed_pseudo_absence
+500134,2012-04-27 00:00:00,2012,4,1.0,0.0,0,1,0,26.16936,90.92159,Assam,none,none,non_event,358.9,8.2,117.8,1,37.48,0,constructed_pseudo_absence
+500135,2016-02-25 00:00:00,2016,2,0.5,0.866,0,0,0,24.67113,90.94281,Assam,none,none,non_event,506.0,14.4,13.9,0,70.77,0,constructed_pseudo_absence
+500136,2016-05-19 00:00:00,2016,5,0.866,-0.5,0,1,0,23.64232,91.77648,Tripura,none,none,non_event,350.7,15.8,231.7,1,28.55,0,constructed_pseudo_absence
+500137,2009-05-16 00:00:00,2009,5,0.866,-0.5,0,1,0,26.75564,94.49171,Nagaland,none,none,non_event,1370.5,29.9,194.9,3,20.62,0,constructed_pseudo_absence
+500138,2008-03-15 00:00:00,2008,3,0.866,0.5,0,0,0,23.43769,92.62233,Mizoram,none,none,non_event,1045.6,32.5,35.8,18,19.11,0,constructed_pseudo_absence
+500139,2008-09-17 00:00:00,2008,9,-0.866,-0.5,1,0,0,22.0995,93.2371,Mizoram,none,none,non_event,1353.2,34.3,216.7,0,50.53,0,constructed_pseudo_absence
+500140,2010-03-16 00:00:00,2010,3,0.866,0.5,0,0,0,27.90423,96.27791,Arunachal Pradesh,none,none,non_event,2330.6,39.9,61.1,2,10.21,0,constructed_pseudo_absence
+500141,2012-12-03 00:00:00,2012,12,-0.5,0.866,0,0,0,23.0656,92.17895,Tripura,none,none,non_event,412.6,6.8,3.0,1,47.58,0,constructed_pseudo_absence
+500142,2015-07-06 00:00:00,2015,7,0.0,-1.0,1,0,0,25.77838,92.77296,Meghalaya,none,none,non_event,1498.0,32.6,338.1,2,35.75,0,constructed_pseudo_absence
+500143,2016-01-21 00:00:00,2016,1,0.0,1.0,0,0,0,27.44965,88.30453,Sikkim,none,none,non_event,2797.1,39.6,3.3,30,13.39,0,constructed_pseudo_absence
+500144,2011-10-22 00:00:00,2011,10,-1.0,-0.0,0,0,1,26.27606,92.13535,Assam,none,none,non_event,704.3,11.0,111.6,39,31.89,0,constructed_pseudo_absence
+500145,2009-12-10 00:00:00,2009,12,-0.5,0.866,0,0,0,24.43339,94.04893,Manipur,none,none,non_event,983.9,30.6,18.1,17,0.97,0,constructed_pseudo_absence
+500146,2008-03-13 00:00:00,2008,3,0.866,0.5,0,0,0,27.14185,88.63795,Sikkim,none,none,non_event,2645.0,36.6,48.6,30,3.75,0,constructed_pseudo_absence
+500147,2015-01-22 00:00:00,2015,1,0.0,1.0,0,0,0,25.07322,94.49213,Manipur,none,none,non_event,984.4,22.8,9.5,13,13.41,0,constructed_pseudo_absence
+500148,2012-12-16 00:00:00,2012,12,-0.5,0.866,0,0,0,25.75596,95.10722,Nagaland,none,none,non_event,1463.9,26.1,22.4,2,34.72,0,constructed_pseudo_absence
+500149,2008-06-18 00:00:00,2008,6,0.5,-0.866,1,0,0,23.94661,94.51997,Manipur,none,none,non_event,931.6,29.2,365.9,5,38.64,0,constructed_pseudo_absence
+500150,2016-02-13 00:00:00,2016,2,0.5,0.866,0,0,0,28.51959,96.67072,Arunachal Pradesh,none,none,non_event,2046.0,34.3,9.6,0,50.51,0,constructed_pseudo_absence
+500151,2012-10-08 00:00:00,2012,10,-1.0,-0.0,0,0,1,25.17025,93.07865,Manipur,none,none,non_event,1278.1,29.6,112.0,25,4.47,0,constructed_pseudo_absence
+500152,2014-12-07 00:00:00,2014,12,-0.5,0.866,0,0,0,23.2744,91.387,Tripura,none,none,non_event,178.7,11.2,21.8,1,44.51,0,constructed_pseudo_absence
+500153,2013-06-14 00:00:00,2013,6,0.5,-0.866,1,0,0,23.63869,91.43813,Tripura,none,none,non_event,289.5,17.7,383.5,1,43.67,0,constructed_pseudo_absence
+500154,2014-12-18 00:00:00,2014,12,-0.5,0.866,0,0,0,25.4587,93.09392,Manipur,none,none,non_event,1130.0,30.5,18.3,14,5.69,0,constructed_pseudo_absence
+500155,2011-05-17 00:00:00,2011,5,0.866,-0.5,0,1,0,25.21175,94.50764,Assam,none,none,non_event,451.9,16.8,169.4,14,6.3,0,constructed_pseudo_absence
+500156,2007-04-13 00:00:00,2007,4,1.0,0.0,0,1,0,25.89837,92.45389,Meghalaya,none,none,non_event,1228.0,22.1,112.0,0,54.14,0,constructed_pseudo_absence
+500157,2008-11-21 00:00:00,2008,11,-0.866,0.5,0,0,1,25.56216,89.87758,Assam,none,none,non_event,246.0,15.6,13.7,5,18.16,0,constructed_pseudo_absence
+500158,2009-11-16 00:00:00,2009,11,-0.866,0.5,0,0,1,27.43195,96.39559,Arunachal Pradesh,none,none,non_event,2290.9,39.0,11.3,0,56.76,0,constructed_pseudo_absence
+500159,2009-07-24 00:00:00,2009,7,0.0,-1.0,1,0,0,24.17412,91.05862,Assam,none,none,non_event,682.0,8.3,366.9,1,42.42,0,constructed_pseudo_absence
+500160,2010-04-26 00:00:00,2010,4,1.0,0.0,0,1,0,22.51786,92.34622,Mizoram,none,none,non_event,1024.4,25.8,114.4,0,55.49,0,constructed_pseudo_absence
+500161,2015-08-23 00:00:00,2015,8,-0.5,-0.866,1,0,0,23.85478,91.11972,Tripura,none,none,non_event,313.8,11.1,234.8,1,43.84,0,constructed_pseudo_absence
+500162,2008-07-12 00:00:00,2008,7,0.0,-1.0,1,0,0,25.63302,94.09148,Nagaland,none,none,non_event,1322.5,35.4,278.5,12,1.48,0,constructed_pseudo_absence
+500163,2013-12-09 00:00:00,2013,12,-0.5,0.866,0,0,0,27.73232,94.2738,Arunachal Pradesh,none,none,non_event,2181.3,38.7,8.7,1,40.86,0,constructed_pseudo_absence
+500164,2008-11-24 00:00:00,2008,11,-0.866,0.5,0,0,1,25.44473,94.31753,Assam,none,none,non_event,445.4,19.9,17.8,21,18.42,0,constructed_pseudo_absence
+500165,2009-11-22 00:00:00,2009,11,-0.866,0.5,0,0,1,26.18282,94.84567,Nagaland,none,none,non_event,1480.6,38.0,28.8,7,34.1,0,constructed_pseudo_absence
+500166,2014-01-07 00:00:00,2014,1,0.0,1.0,0,0,0,25.34185,93.11358,Manipur,none,none,non_event,1349.0,28.0,3.5,18,4.23,0,constructed_pseudo_absence
+500167,2013-12-18 00:00:00,2013,12,-0.5,0.866,0,0,0,27.51523,93.32945,Arunachal Pradesh,none,none,non_event,2056.4,28.9,2.0,2,33.5,0,constructed_pseudo_absence
+500168,2007-12-11 00:00:00,2007,12,-0.5,0.866,0,0,0,25.31472,92.38642,Meghalaya,none,none,non_event,1309.8,23.1,17.7,8,6.45,0,constructed_pseudo_absence
+500169,2013-03-06 00:00:00,2013,3,0.866,0.5,0,0,0,27.97844,88.66898,Sikkim,none,none,non_event,2792.1,43.7,49.5,1,40.28,0,constructed_pseudo_absence
+500170,2008-05-27 00:00:00,2008,5,0.866,-0.5,0,1,0,23.98299,93.0725,Mizoram,none,none,non_event,962.6,26.5,169.0,19,15.53,0,constructed_pseudo_absence
+500171,2011-05-23 00:00:00,2011,5,0.866,-0.5,0,1,0,24.41227,93.86379,Assam,none,none,non_event,332.1,14.6,203.0,17,19.58,0,constructed_pseudo_absence
+500172,2012-09-14 00:00:00,2012,9,-0.866,-0.5,1,0,0,26.00483,94.68095,Nagaland,none,none,non_event,1326.6,37.0,214.8,10,8.37,0,constructed_pseudo_absence
+500173,2012-06-24 00:00:00,2012,6,0.5,-0.866,1,0,0,26.81762,95.26132,Arunachal Pradesh,none,none,non_event,2357.3,30.8,344.7,2,25.81,0,constructed_pseudo_absence
+500174,2014-01-03 00:00:00,2014,1,0.0,1.0,0,0,0,25.41247,94.22056,Manipur,none,none,non_event,1281.6,20.3,15.6,23,11.16,0,constructed_pseudo_absence
+500175,2016-02-15 00:00:00,2016,2,0.5,0.866,0,0,0,25.88914,94.37776,Nagaland,none,none,non_event,1452.5,26.6,21.4,14,20.18,0,constructed_pseudo_absence
+500176,2013-03-09 00:00:00,2013,3,0.866,0.5,0,0,0,26.33829,93.0356,Assam,none,none,non_event,544.2,13.2,34.3,1,27.46,0,constructed_pseudo_absence
+500177,2015-01-25 00:00:00,2015,1,0.0,1.0,0,0,0,24.74818,93.69658,Manipur,none,none,non_event,1462.8,26.8,10.8,31,13.72,0,constructed_pseudo_absence
+500178,2010-02-28 00:00:00,2010,2,0.5,0.866,0,0,0,23.70435,93.39835,Mizoram,none,none,non_event,1162.3,24.0,8.7,3,18.42,0,constructed_pseudo_absence
+500179,2012-10-23 00:00:00,2012,10,-1.0,-0.0,0,0,1,24.49562,92.07262,Tripura,none,none,non_event,171.2,13.8,72.3,3,33.34,0,constructed_pseudo_absence
+500180,2009-11-17 00:00:00,2009,11,-0.866,0.5,0,0,1,24.11354,93.05417,Mizoram,none,none,non_event,1127.2,28.4,33.5,5,22.67,0,constructed_pseudo_absence
+500181,2012-07-12 00:00:00,2012,7,0.0,-1.0,1,0,0,24.2498,93.88924,Manipur,none,none,non_event,1290.3,27.8,357.1,15,18.24,0,constructed_pseudo_absence
+500182,2011-04-23 00:00:00,2011,4,1.0,0.0,0,1,0,24.9627,93.15519,Manipur,none,none,non_event,1168.9,25.3,131.4,33,17.63,0,constructed_pseudo_absence
+500183,2012-09-15 00:00:00,2012,9,-0.866,-0.5,1,0,0,27.90567,88.06638,Sikkim,none,none,non_event,2984.9,42.9,224.0,0,64.98,0,constructed_pseudo_absence
+500184,2016-02-05 00:00:00,2016,2,0.5,0.866,0,0,0,25.46812,94.40447,Manipur,none,none,non_event,1047.5,23.6,30.3,18,19.25,0,constructed_pseudo_absence
+500185,2011-02-11 00:00:00,2011,2,0.5,0.866,0,0,0,29.01103,94.5568,Arunachal Pradesh,none,none,non_event,2081.5,39.3,17.6,1,32.29,0,constructed_pseudo_absence
+500186,2015-03-21 00:00:00,2015,3,0.866,0.5,0,0,0,24.09943,92.50073,Mizoram,none,none,non_event,1062.7,34.9,46.0,19,18.56,0,constructed_pseudo_absence
+500187,2009-10-24 00:00:00,2009,10,-1.0,-0.0,0,0,1,24.92444,94.04516,Manipur,none,none,non_event,1019.2,20.4,102.3,23,12.74,0,constructed_pseudo_absence
+500188,2007-12-25 00:00:00,2007,12,-0.5,0.866,0,0,0,28.99319,91.6674,Arunachal Pradesh,none,none,non_event,2315.4,36.7,15.3,0,158.24,0,constructed_pseudo_absence
+500189,2015-03-10 00:00:00,2015,3,0.866,0.5,0,0,0,27.67992,88.02726,Sikkim,none,none,non_event,2775.0,43.6,56.9,1,43.11,0,constructed_pseudo_absence
+500190,2007-02-14 00:00:00,2007,2,0.5,0.866,0,0,0,27.32718,88.06568,Sikkim,none,none,non_event,2981.9,43.6,13.1,14,17.56,0,constructed_pseudo_absence
+500191,2012-12-05 00:00:00,2012,12,-0.5,0.866,0,0,0,24.39391,94.29305,Manipur,none,none,non_event,1223.2,20.2,12.7,11,6.82,0,constructed_pseudo_absence
+500192,2011-05-05 00:00:00,2011,5,0.866,-0.5,0,1,0,25.34455,92.63878,Assam,none,none,non_event,642.3,12.1,160.7,17,20.38,0,constructed_pseudo_absence
+500193,2009-11-19 00:00:00,2009,11,-0.866,0.5,0,0,1,27.95058,88.37632,Sikkim,none,none,non_event,2928.7,43.9,18.8,1,46.4,0,constructed_pseudo_absence
+500194,2014-12-16 00:00:00,2014,12,-0.5,0.866,0,0,0,24.7467,93.9265,Manipur,none,none,non_event,1258.8,20.0,20.3,32,1.77,0,constructed_pseudo_absence
+500195,2012-01-10 00:00:00,2012,1,0.0,1.0,0,0,0,24.4467,91.35817,Tripura,none,none,non_event,80.0,7.9,22.9,1,41.19,0,constructed_pseudo_absence
+500196,2008-05-09 00:00:00,2008,5,0.866,-0.5,0,1,0,23.3572,91.10981,Tripura,none,none,non_event,275.0,16.6,234.4,0,72.91,0,constructed_pseudo_absence
+500197,2015-02-18 00:00:00,2015,2,0.5,0.866,0,0,0,25.28144,93.3972,Nagaland,none,none,non_event,1461.5,26.0,15.9,23,20.11,0,constructed_pseudo_absence
+500198,2016-10-04 00:00:00,2016,10,-1.0,-0.0,0,0,1,24.12305,91.43566,Tripura,none,none,non_event,232.7,6.8,63.8,2,4.85,0,constructed_pseudo_absence
+500199,2012-11-07 00:00:00,2012,11,-0.866,0.5,0,0,1,26.63082,93.94426,Nagaland,none,none,non_event,1179.8,26.3,22.9,0,53.56,0,constructed_pseudo_absence
+500200,2012-11-17 00:00:00,2012,11,-0.866,0.5,0,0,1,26.73138,92.30851,Arunachal Pradesh,none,none,non_event,2114.8,31.0,26.5,1,45.1,0,constructed_pseudo_absence
+500201,2009-04-20 00:00:00,2009,4,1.0,0.0,0,1,0,24.42314,94.10352,Manipur,none,none,non_event,1062.5,31.9,126.9,17,0.95,0,constructed_pseudo_absence
+500202,2014-10-10 00:00:00,2014,10,-1.0,-0.0,0,0,1,26.11317,94.26846,Nagaland,none,none,non_event,1408.6,37.5,76.4,8,6.53,0,constructed_pseudo_absence
+500203,2016-03-24 00:00:00,2016,3,0.866,0.5,0,0,0,26.41285,95.16181,Nagaland,none,none,non_event,1447.7,31.4,61.3,1,37.03,0,constructed_pseudo_absence
+500204,2016-08-24 00:00:00,2016,8,-0.5,-0.866,1,0,0,23.32485,91.88671,Tripura,none,none,non_event,86.4,6.0,223.5,1,38.69,0,constructed_pseudo_absence
+500205,2007-08-23 00:00:00,2007,8,-0.5,-0.866,1,0,0,27.16255,88.61265,Sikkim,none,none,non_event,2704.3,37.1,220.0,30,3.55,0,constructed_pseudo_absence
+500206,2010-04-25 00:00:00,2010,4,1.0,0.0,0,1,0,25.9538,94.08462,Nagaland,none,none,non_event,1292.4,35.3,124.0,10,18.79,0,constructed_pseudo_absence
+500207,2015-03-22 00:00:00,2015,3,0.866,0.5,0,0,0,28.64675,94.56023,Arunachal Pradesh,none,none,non_event,1855.9,39.4,46.1,0,50.53,0,constructed_pseudo_absence
+500208,2015-04-25 00:00:00,2015,4,1.0,0.0,0,1,0,24.67336,93.95963,Manipur,none,none,non_event,1190.4,21.9,143.6,22,2.44,0,constructed_pseudo_absence
+500209,2010-03-10 00:00:00,2010,3,0.866,0.5,0,0,0,23.4862,92.43072,Mizoram,none,none,non_event,863.7,29.1,55.2,16,32.94,0,constructed_pseudo_absence
+500210,2014-03-12 00:00:00,2014,3,0.866,0.5,0,0,0,23.90505,93.04588,Mizoram,none,none,non_event,942.0,36.0,61.9,18,6.73,0,constructed_pseudo_absence
+500211,2015-04-13 00:00:00,2015,4,1.0,0.0,0,1,0,22.64825,92.88817,Mizoram,none,none,non_event,1151.4,24.0,147.7,3,9.07,0,constructed_pseudo_absence
+500212,2008-04-15 00:00:00,2008,4,1.0,0.0,0,1,0,24.35186,93.51773,Manipur,none,none,non_event,1097.4,31.6,133.4,8,38.91,0,constructed_pseudo_absence
+500213,2015-10-05 00:00:00,2015,10,-1.0,-0.0,0,0,1,25.22227,91.41573,Meghalaya,none,none,non_event,1331.1,34.0,79.1,0,60.07,0,constructed_pseudo_absence
+500214,2015-02-08 00:00:00,2015,2,0.5,0.866,0,0,0,25.2667,91.8095,Meghalaya,none,none,non_event,1383.6,22.8,14.5,3,35.0,0,constructed_pseudo_absence
+500215,2007-12-06 00:00:00,2007,12,-0.5,0.866,0,0,0,23.06087,92.02492,Tripura,none,none,non_event,293.6,17.3,21.7,1,31.9,0,constructed_pseudo_absence
+500216,2011-03-21 00:00:00,2011,3,0.866,0.5,0,0,0,23.66392,91.33935,Tripura,none,none,non_event,278.1,14.4,46.3,1,49.06,0,constructed_pseudo_absence
+500217,2007-12-06 00:00:00,2007,12,-0.5,0.866,0,0,0,25.58867,91.96935,Meghalaya,none,none,non_event,1119.7,33.7,19.3,5,7.68,0,constructed_pseudo_absence
+500218,2014-02-24 00:00:00,2014,2,0.5,0.866,0,0,0,29.4918,93.84227,Arunachal Pradesh,none,none,non_event,2251.9,31.0,35.3,0,115.37,0,constructed_pseudo_absence
+500219,2008-12-11 00:00:00,2008,12,-0.5,0.866,0,0,0,26.62687,94.85098,Arunachal Pradesh,none,none,non_event,2050.0,28.6,22.5,4,18.23,0,constructed_pseudo_absence
+500220,2015-05-07 00:00:00,2015,5,0.866,-0.5,0,1,0,24.32282,91.26104,Tripura,none,none,non_event,259.5,8.9,231.5,1,33.25,0,constructed_pseudo_absence
+500221,2007-11-26 00:00:00,2007,11,-0.866,0.5,0,0,1,23.93726,91.96232,Tripura,none,none,non_event,80.0,9.1,26.5,1,21.02,0,constructed_pseudo_absence
+500222,2013-11-17 00:00:00,2013,11,-0.866,0.5,0,0,1,25.19304,92.36844,Meghalaya,none,none,non_event,1297.7,33.8,20.0,11,5.85,0,constructed_pseudo_absence
+500223,2012-12-01 00:00:00,2012,12,-0.5,0.866,0,0,0,24.82065,90.58585,Assam,none,none,non_event,655.0,18.8,3.6,2,42.61,0,constructed_pseudo_absence
+500224,2016-01-21 00:00:00,2016,1,0.0,1.0,0,0,0,24.38049,92.56234,Mizoram,none,none,non_event,1065.1,36.0,6.0,9,11.54,0,constructed_pseudo_absence
+500225,2015-12-23 00:00:00,2015,12,-0.5,0.866,0,0,0,25.91504,90.70622,Assam,none,none,non_event,466.0,19.9,17.1,2,17.16,0,constructed_pseudo_absence
+500226,2009-05-15 00:00:00,2009,5,0.866,-0.5,0,1,0,22.85561,92.46502,Mizoram,none,none,non_event,878.9,32.8,232.4,1,41.54,0,constructed_pseudo_absence
+500227,2015-11-27 00:00:00,2015,11,-0.866,0.5,0,0,1,27.77213,88.82152,Sikkim,none,none,non_event,2759.7,42.4,15.0,7,23.61,0,constructed_pseudo_absence
+500228,2012-01-19 00:00:00,2012,1,0.0,1.0,0,0,0,26.14948,93.02749,Assam,none,none,non_event,338.2,18.8,19.6,1,48.33,0,constructed_pseudo_absence
+500229,2012-12-15 00:00:00,2012,12,-0.5,0.866,0,0,0,25.62997,90.24956,Meghalaya,none,none,non_event,1174.6,23.3,2.2,7,13.63,0,constructed_pseudo_absence
+500230,2007-05-17 00:00:00,2007,5,0.866,-0.5,0,1,0,23.04551,91.71245,Tripura,none,none,non_event,328.5,17.8,198.8,1,3.57,0,constructed_pseudo_absence
+500231,2007-04-27 00:00:00,2007,4,1.0,0.0,0,1,0,23.97643,91.4698,Tripura,none,none,non_event,80.0,12.9,83.6,2,12.59,0,constructed_pseudo_absence
+500232,2008-07-02 00:00:00,2008,7,0.0,-1.0,1,0,0,24.27663,91.87053,Assam,none,none,non_event,446.4,8.2,412.7,2,43.51,0,constructed_pseudo_absence
+500233,2009-11-24 00:00:00,2009,11,-0.866,0.5,0,0,1,22.95078,91.59064,Tripura,none,none,non_event,226.8,8.6,23.8,1,14.74,0,constructed_pseudo_absence
+500234,2013-04-22 00:00:00,2013,4,1.0,0.0,0,1,0,27.49339,88.8254,Sikkim,none,none,non_event,2717.9,44.0,153.9,19,14.39,0,constructed_pseudo_absence
+500235,2009-12-13 00:00:00,2009,12,-0.5,0.866,0,0,0,25.04171,93.62599,Manipur,none,none,non_event,1112.7,20.0,17.0,32,11.32,0,constructed_pseudo_absence
+500236,2011-05-24 00:00:00,2011,5,0.866,-0.5,0,1,0,25.9183,92.06854,Meghalaya,none,none,non_event,1362.7,25.7,210.7,41,21.76,0,constructed_pseudo_absence
+500237,2011-02-24 00:00:00,2011,2,0.5,0.866,0,0,0,25.27226,90.83848,Meghalaya,none,none,non_event,1329.5,24.7,11.3,2,29.12,0,constructed_pseudo_absence
+500238,2007-03-03 00:00:00,2007,3,0.866,0.5,0,0,0,27.67642,88.84261,Sikkim,none,none,non_event,2630.1,34.2,28.9,15,19.32,0,constructed_pseudo_absence
+500239,2014-02-07 00:00:00,2014,2,0.5,0.866,0,0,0,27.30973,91.761,Arunachal Pradesh,none,none,non_event,2225.0,34.5,29.8,3,31.19,0,constructed_pseudo_absence
+500240,2016-03-20 00:00:00,2016,3,0.866,0.5,0,0,0,24.7574,93.52067,Manipur,none,none,non_event,1254.9,26.3,63.8,30,1.73,0,constructed_pseudo_absence
+500241,2015-02-10 00:00:00,2015,2,0.5,0.866,0,0,0,25.33194,90.22978,Meghalaya,none,none,non_event,1347.1,23.0,20.1,7,19.65,0,constructed_pseudo_absence
+500242,2014-01-12 00:00:00,2014,1,0.0,1.0,0,0,0,24.98939,93.76896,Manipur,none,none,non_event,1154.8,26.7,20.0,34,8.56,0,constructed_pseudo_absence
+500243,2011-04-25 00:00:00,2011,4,1.0,0.0,0,1,0,26.45336,94.07569,Nagaland,none,none,non_event,1322.2,27.0,114.1,2,35.93,0,constructed_pseudo_absence
+500244,2014-12-18 00:00:00,2014,12,-0.5,0.866,0,0,0,25.33081,91.92273,Meghalaya,none,none,non_event,1292.1,34.0,8.7,4,27.97,0,constructed_pseudo_absence
+500245,2012-09-15 00:00:00,2012,9,-0.866,-0.5,1,0,0,24.538,93.45899,Manipur,none,none,non_event,967.0,22.6,254.7,18,19.52,0,constructed_pseudo_absence
+500246,2016-09-28 00:00:00,2016,9,-0.866,-0.5,1,0,0,25.05669,90.9315,Meghalaya,none,none,non_event,1121.1,33.7,188.5,2,41.03,0,constructed_pseudo_absence
+500247,2012-03-01 00:00:00,2012,3,0.866,0.5,0,0,0,25.52733,92.40842,Meghalaya,none,none,non_event,1030.4,31.5,35.3,5,20.96,0,constructed_pseudo_absence
+500248,2010-10-23 00:00:00,2010,10,-1.0,-0.0,0,0,1,27.01283,94.45228,Assam,none,none,non_event,276.3,9.5,87.5,5,41.25,0,constructed_pseudo_absence
+500249,2015-09-10 00:00:00,2015,9,-0.866,-0.5,1,0,0,26.59592,94.02326,Nagaland,none,none,non_event,1147.6,29.9,201.7,0,52.46,0,constructed_pseudo_absence
+500250,2014-11-11 00:00:00,2014,11,-0.866,0.5,0,0,1,23.64561,92.06338,Tripura,none,none,non_event,433.1,17.5,25.4,2,41.77,0,constructed_pseudo_absence
+500251,2009-01-18 00:00:00,2009,1,0.0,1.0,0,0,0,27.05029,88.77768,Sikkim,none,none,non_event,2558.8,32.4,17.6,27,19.03,0,constructed_pseudo_absence
+500252,2010-04-27 00:00:00,2010,4,1.0,0.0,0,1,0,27.32471,88.17657,Sikkim,none,none,non_event,2839.0,33.1,105.5,25,6.82,0,constructed_pseudo_absence
+500253,2014-05-24 00:00:00,2014,5,0.866,-0.5,0,1,0,25.66319,94.86102,Nagaland,none,none,non_event,1469.3,27.4,226.1,5,24.26,0,constructed_pseudo_absence
+500254,2007-07-27 00:00:00,2007,7,0.0,-1.0,1,0,0,23.19448,92.16724,Tripura,none,none,non_event,511.5,17.8,419.9,0,50.21,0,constructed_pseudo_absence
+500255,2010-01-05 00:00:00,2010,1,0.0,1.0,0,0,0,28.81658,93.93311,Arunachal Pradesh,none,none,non_event,2036.6,28.1,10.9,0,95.17,0,constructed_pseudo_absence
+500256,2016-12-22 00:00:00,2016,12,-0.5,0.866,0,0,0,25.30881,94.51168,Nagaland,none,none,non_event,1408.5,35.5,2.0,15,2.92,0,constructed_pseudo_absence
+500257,2011-07-10 00:00:00,2011,7,0.0,-1.0,1,0,0,27.01304,88.47648,Sikkim,none,none,non_event,2837.6,34.0,277.2,30,5.81,0,constructed_pseudo_absence
+500258,2008-12-17 00:00:00,2008,12,-0.5,0.866,0,0,0,27.88678,88.8188,Sikkim,none,none,non_event,2868.3,38.5,2.0,1,33.96,0,constructed_pseudo_absence
+500259,2013-01-13 00:00:00,2013,1,0.0,1.0,0,0,0,24.01956,92.52079,Mizoram,none,none,non_event,957.4,28.5,6.7,18,15.6,0,constructed_pseudo_absence
+500260,2008-10-28 00:00:00,2008,10,-1.0,-0.0,0,0,1,25.32997,92.28419,Meghalaya,none,none,non_event,1405.1,32.2,84.1,7,12.8,0,constructed_pseudo_absence
+500261,2007-09-23 00:00:00,2007,9,-0.866,-0.5,1,0,0,27.41719,88.49743,Sikkim,none,none,non_event,3033.0,36.8,191.6,31,7.52,0,constructed_pseudo_absence
+500262,2008-12-02 00:00:00,2008,12,-0.5,0.866,0,0,0,27.7094,88.29814,Sikkim,none,none,non_event,2650.4,44.0,20.1,5,36.98,0,constructed_pseudo_absence
+500263,2011-12-19 00:00:00,2011,12,-0.5,0.866,0,0,0,23.33375,92.20899,Tripura,none,none,non_event,285.4,6.1,3.8,0,58.09,0,constructed_pseudo_absence
+500264,2009-11-23 00:00:00,2009,11,-0.866,0.5,0,0,1,25.22818,93.6936,Nagaland,none,none,non_event,1648.6,30.5,38.3,27,7.62,0,constructed_pseudo_absence
+500265,2013-10-18 00:00:00,2013,10,-1.0,-0.0,0,0,1,22.32237,92.48857,Mizoram,none,none,non_event,912.6,31.7,88.8,1,48.25,0,constructed_pseudo_absence
+500266,2008-06-12 00:00:00,2008,6,0.5,-0.866,1,0,0,25.30195,94.24076,Manipur,none,none,non_event,1454.0,25.4,239.8,24,17.87,0,constructed_pseudo_absence
+500267,2016-04-25 00:00:00,2016,4,1.0,0.0,0,1,0,25.42831,94.54474,Assam,none,none,non_event,281.4,10.1,112.1,15,5.8,0,constructed_pseudo_absence
+500268,2013-05-22 00:00:00,2013,5,0.866,-0.5,0,1,0,23.68497,91.52697,Tripura,none,none,non_event,439.0,6.0,210.9,2,33.56,0,constructed_pseudo_absence
+500269,2008-03-13 00:00:00,2008,3,0.866,0.5,0,0,0,23.97494,93.05573,Mizoram,none,none,non_event,934.4,29.2,57.8,19,14.49,0,constructed_pseudo_absence
+500270,2007-12-15 00:00:00,2007,12,-0.5,0.866,0,0,0,27.34835,88.0959,Sikkim,none,none,non_event,2948.4,39.1,4.9,14,14.5,0,constructed_pseudo_absence
+500271,2015-07-14 00:00:00,2015,7,0.0,-1.0,1,0,0,23.96586,93.77576,Manipur,none,none,non_event,1149.1,20.1,273.6,7,21.33,0,constructed_pseudo_absence
+500272,2013-01-14 00:00:00,2013,1,0.0,1.0,0,0,0,26.42801,94.64196,Assam,none,none,non_event,476.7,18.2,2.4,7,16.87,0,constructed_pseudo_absence
+500273,2013-02-09 00:00:00,2013,2,0.5,0.866,0,0,0,25.62916,90.30875,Meghalaya,none,none,non_event,1133.2,29.6,18.7,7,14.08,0,constructed_pseudo_absence
+500274,2011-06-03 00:00:00,2011,6,0.5,-0.866,1,0,0,24.75211,91.43856,Assam,none,none,non_event,519.0,9.1,297.7,0,73.72,0,constructed_pseudo_absence
+500275,2008-02-01 00:00:00,2008,2,0.5,0.866,0,0,0,23.85009,91.33466,Tripura,none,none,non_event,92.8,7.3,20.4,2,29.8,0,constructed_pseudo_absence
+500276,2012-05-27 00:00:00,2012,5,0.866,-0.5,0,1,0,27.88448,88.29659,Sikkim,none,none,non_event,2870.0,32.5,252.6,1,46.46,0,constructed_pseudo_absence
+500277,2010-05-06 00:00:00,2010,5,0.866,-0.5,0,1,0,24.37083,94.08578,Manipur,none,none,non_event,1114.5,28.2,262.7,16,3.86,0,constructed_pseudo_absence
+500278,2016-11-11 00:00:00,2016,11,-0.866,0.5,0,0,1,23.81067,92.95948,Mizoram,none,none,non_event,1007.1,24.4,30.9,19,10.09,0,constructed_pseudo_absence
+500279,2010-08-18 00:00:00,2010,8,-0.5,-0.866,1,0,0,27.40152,88.83886,Sikkim,none,none,non_event,2872.0,38.2,248.3,19,7.9,0,constructed_pseudo_absence
+500280,2010-05-10 00:00:00,2010,5,0.866,-0.5,0,1,0,29.36371,94.22357,Arunachal Pradesh,none,none,non_event,2287.7,37.8,227.2,0,76.26,0,constructed_pseudo_absence
+500281,2011-03-22 00:00:00,2011,3,0.866,0.5,0,0,0,27.74028,88.12526,Sikkim,none,none,non_event,2739.3,32.4,39.8,1,45.72,0,constructed_pseudo_absence
+500282,2014-08-18 00:00:00,2014,8,-0.5,-0.866,1,0,0,27.08136,88.89163,Sikkim,none,none,non_event,2667.8,42.9,296.7,21,26.45,0,constructed_pseudo_absence
+500283,2012-10-26 00:00:00,2012,10,-1.0,-0.0,0,0,1,27.59801,88.71165,Sikkim,none,none,non_event,2547.6,43.9,94.5,17,5.61,0,constructed_pseudo_absence
+500284,2012-02-20 00:00:00,2012,2,0.5,0.866,0,0,0,24.52654,91.26386,Assam,none,none,non_event,286.6,11.4,28.7,0,52.74,0,constructed_pseudo_absence
+500285,2013-01-04 00:00:00,2013,1,0.0,1.0,0,0,0,28.06349,88.29844,Sikkim,none,none,non_event,2636.0,41.8,12.4,0,61.05,0,constructed_pseudo_absence
+500286,2016-10-05 00:00:00,2016,10,-1.0,-0.0,0,0,1,25.49036,90.9734,Meghalaya,none,none,non_event,1160.4,22.1,71.1,0,51.74,0,constructed_pseudo_absence
+500287,2008-01-24 00:00:00,2008,1,0.0,1.0,0,0,0,25.25219,95.49945,Assam,none,none,non_event,505.9,18.5,6.8,0,92.2,0,constructed_pseudo_absence
+500288,2012-05-15 00:00:00,2012,5,0.866,-0.5,0,1,0,24.15483,91.72534,Tripura,none,none,non_event,410.2,7.3,226.1,2,27.27,0,constructed_pseudo_absence
+500289,2008-01-11 00:00:00,2008,1,0.0,1.0,0,0,0,25.27103,94.80417,Assam,none,none,non_event,710.2,19.8,18.6,6,26.61,0,constructed_pseudo_absence
+500290,2015-02-06 00:00:00,2015,2,0.5,0.866,0,0,0,25.56685,94.33288,Manipur,none,none,non_event,1130.8,21.1,17.3,16,17.46,0,constructed_pseudo_absence
+500291,2009-02-22 00:00:00,2009,2,0.5,0.866,0,0,0,23.27097,91.58606,Tripura,none,none,non_event,405.3,8.4,8.3,1,31.6,0,constructed_pseudo_absence
+500292,2007-10-07 00:00:00,2007,10,-1.0,-0.0,0,0,1,25.49453,91.08866,Meghalaya,none,none,non_event,1277.6,31.4,85.3,0,58.95,0,constructed_pseudo_absence
+500293,2015-02-11 00:00:00,2015,2,0.5,0.866,0,0,0,26.35166,94.73686,Assam,none,none,non_event,692.2,16.3,8.3,7,21.46,0,constructed_pseudo_absence
+500294,2016-04-13 00:00:00,2016,4,1.0,0.0,0,1,0,23.74434,91.86693,Tripura,none,none,non_event,257.5,12.1,119.6,1,20.32,0,constructed_pseudo_absence
+500295,2011-12-19 00:00:00,2011,12,-0.5,0.866,0,0,0,23.88778,92.07649,Tripura,none,none,non_event,218.2,16.3,2.0,2,32.21,0,constructed_pseudo_absence
+500296,2012-10-17 00:00:00,2012,10,-1.0,-0.0,0,0,1,25.03043,90.43678,Assam,none,none,non_event,287.4,12.4,87.2,2,22.7,0,constructed_pseudo_absence
+500297,2015-10-21 00:00:00,2015,10,-1.0,-0.0,0,0,1,27.46534,88.438,Sikkim,none,none,non_event,2940.8,35.5,99.4,30,15.44,0,constructed_pseudo_absence
+500298,2012-11-20 00:00:00,2012,11,-0.866,0.5,0,0,1,24.73032,93.25253,Manipur,none,none,non_event,1446.4,24.1,16.0,22,16.18,0,constructed_pseudo_absence
+500299,2013-12-17 00:00:00,2013,12,-0.5,0.866,0,0,0,28.00537,92.65126,Arunachal Pradesh,none,none,non_event,2227.2,36.3,9.6,1,41.58,0,constructed_pseudo_absence
+500300,2014-02-19 00:00:00,2014,2,0.5,0.866,0,0,0,23.56501,92.10787,Tripura,none,none,non_event,358.1,17.7,23.0,1,47.94,0,constructed_pseudo_absence
+500301,2011-02-15 00:00:00,2011,2,0.5,0.866,0,0,0,21.98501,92.46981,Mizoram,none,none,non_event,993.8,35.4,28.0,0,75.07,0,constructed_pseudo_absence
+500302,2008-03-18 00:00:00,2008,3,0.866,0.5,0,0,0,23.77956,91.23585,Tripura,none,none,non_event,327.6,15.7,53.7,1,41.68,0,constructed_pseudo_absence
+500303,2010-12-04 00:00:00,2010,12,-0.5,0.866,0,0,0,28.80401,94.10406,Arunachal Pradesh,none,none,non_event,2092.5,39.9,16.0,0,79.37,0,constructed_pseudo_absence
+500304,2014-03-28 00:00:00,2014,3,0.866,0.5,0,0,0,25.32748,92.79794,Meghalaya,none,none,non_event,1422.4,28.2,55.3,18,5.14,0,constructed_pseudo_absence
+500305,2016-10-28 00:00:00,2016,10,-1.0,-0.0,0,0,1,27.12496,91.19276,Assam,none,none,non_event,369.7,10.0,101.7,0,82.83,0,constructed_pseudo_absence
+500306,2010-11-19 00:00:00,2010,11,-0.866,0.5,0,0,1,24.97069,94.41273,Manipur,none,none,non_event,1012.7,26.3,17.2,14,9.19,0,constructed_pseudo_absence
+500307,2011-08-28 00:00:00,2011,8,-0.5,-0.866,1,0,0,24.41494,94.2673,Manipur,none,none,non_event,1208.0,20.1,297.2,12,7.8,0,constructed_pseudo_absence
+500308,2013-12-09 00:00:00,2013,12,-0.5,0.866,0,0,0,24.6288,94.42559,Assam,none,none,non_event,421.0,12.6,3.4,13,22.32,0,constructed_pseudo_absence
+500309,2010-11-22 00:00:00,2010,11,-0.866,0.5,0,0,1,24.27439,94.28051,Manipur,none,none,non_event,1426.0,30.3,14.2,13,10.76,0,constructed_pseudo_absence
+500310,2008-09-25 00:00:00,2008,9,-0.866,-0.5,1,0,0,23.53231,92.65021,Mizoram,none,none,non_event,1161.6,24.6,183.5,18,18.82,0,constructed_pseudo_absence
+500311,2014-12-11 00:00:00,2014,12,-0.5,0.866,0,0,0,23.70623,93.25278,Mizoram,none,none,non_event,1345.3,35.8,20.8,4,22.5,0,constructed_pseudo_absence
+500312,2012-12-26 00:00:00,2012,12,-0.5,0.866,0,0,0,26.95063,92.58823,Assam,none,none,non_event,534.5,13.8,4.3,1,8.4,0,constructed_pseudo_absence
+500313,2012-11-11 00:00:00,2012,11,-0.866,0.5,0,0,1,27.90733,88.44524,Sikkim,none,none,non_event,3047.3,42.6,15.5,1,38.57,0,constructed_pseudo_absence
+500314,2007-01-21 00:00:00,2007,1,0.0,1.0,0,0,0,24.16129,92.17299,Tripura,none,none,non_event,485.0,17.7,13.9,1,46.81,0,constructed_pseudo_absence
+500315,2014-01-14 00:00:00,2014,1,0.0,1.0,0,0,0,27.72479,90.6953,Assam,none,none,non_event,430.0,11.9,16.5,0,115.54,0,constructed_pseudo_absence
+500316,2011-01-12 00:00:00,2011,1,0.0,1.0,0,0,0,25.47608,93.54336,Manipur,none,none,non_event,1007.9,21.2,8.9,14,18.72,0,constructed_pseudo_absence
+500317,2010-05-03 00:00:00,2010,5,0.866,-0.5,0,1,0,23.8984,94.12609,Manipur,none,none,non_event,1096.1,20.5,213.0,7,1.76,0,constructed_pseudo_absence
+500318,2015-10-01 00:00:00,2015,10,-1.0,-0.0,0,0,1,23.0247,91.81242,Tripura,none,none,non_event,155.8,10.6,64.9,1,9.8,0,constructed_pseudo_absence
+500319,2009-05-08 00:00:00,2009,5,0.866,-0.5,0,1,0,27.9538,92.36058,Assam,none,none,non_event,452.0,13.0,199.8,0,56.63,0,constructed_pseudo_absence
+500320,2011-02-25 00:00:00,2011,2,0.5,0.866,0,0,0,24.50249,92.01564,Assam,none,none,non_event,296.5,10.1,32.7,2,38.57,0,constructed_pseudo_absence
+500321,2016-10-15 00:00:00,2016,10,-1.0,-0.0,0,0,1,23.92998,94.01392,Manipur,none,none,non_event,943.2,28.7,76.1,8,7.8,0,constructed_pseudo_absence
+500322,2014-12-03 00:00:00,2014,12,-0.5,0.866,0,0,0,25.5478,94.10894,Manipur,none,none,non_event,1043.9,21.9,3.9,15,8.09,0,constructed_pseudo_absence
+500323,2013-03-05 00:00:00,2013,3,0.866,0.5,0,0,0,26.39934,92.1194,Assam,none,none,non_event,633.2,20.0,47.5,30,38.43,0,constructed_pseudo_absence
+500324,2016-03-23 00:00:00,2016,3,0.866,0.5,0,0,0,25.60874,91.60002,Meghalaya,none,none,non_event,1331.3,31.1,47.5,5,26.96,0,constructed_pseudo_absence
+500325,2010-11-10 00:00:00,2010,11,-0.866,0.5,0,0,1,22.43416,92.92831,Mizoram,none,none,non_event,857.5,35.8,32.9,3,6.38,0,constructed_pseudo_absence
+500326,2014-09-03 00:00:00,2014,9,-0.866,-0.5,1,0,0,25.54438,90.13823,Meghalaya,none,none,non_event,1223.6,33.9,242.3,6,6.89,0,constructed_pseudo_absence
+500327,2016-05-18 00:00:00,2016,5,0.866,-0.5,0,1,0,26.88106,93.55077,Nagaland,none,none,non_event,1468.5,36.9,230.0,3,23.59,0,constructed_pseudo_absence
+500328,2011-02-02 00:00:00,2011,2,0.5,0.866,0,0,0,24.16509,90.12546,Assam,none,none,non_event,656.2,8.3,22.0,0,123.38,0,constructed_pseudo_absence
+500329,2013-05-13 00:00:00,2013,5,0.866,-0.5,0,1,0,23.53428,92.80126,Mizoram,none,none,non_event,1060.6,35.6,165.5,19,9.48,0,constructed_pseudo_absence
+500330,2015-12-26 00:00:00,2015,12,-0.5,0.866,0,0,0,24.32719,93.55783,Manipur,none,none,non_event,1186.4,32.0,5.4,7,41.73,0,constructed_pseudo_absence
+500331,2010-01-03 00:00:00,2010,1,0.0,1.0,0,0,0,25.30966,92.45616,Assam,none,none,non_event,471.9,9.4,6.0,11,9.46,0,constructed_pseudo_absence
+500332,2009-01-23 00:00:00,2009,1,0.0,1.0,0,0,0,27.49694,95.87599,Arunachal Pradesh,none,none,non_event,2178.2,28.2,2.0,0,53.87,0,constructed_pseudo_absence
+500333,2011-02-05 00:00:00,2011,2,0.5,0.866,0,0,0,24.42483,91.72761,Tripura,none,none,non_event,176.2,6.1,32.1,1,45.73,0,constructed_pseudo_absence
+500334,2013-03-03 00:00:00,2013,3,0.866,0.5,0,0,0,27.10858,89.88494,Assam,none,none,non_event,242.3,17.5,56.1,0,114.62,0,constructed_pseudo_absence
+500335,2007-06-19 00:00:00,2007,6,0.5,-0.866,1,0,0,26.03498,92.91793,Assam,none,none,non_event,185.9,9.4,249.5,0,57.27,0,constructed_pseudo_absence
+500336,2008-02-17 00:00:00,2008,2,0.5,0.866,0,0,0,27.58765,93.94696,Assam,none,none,non_event,204.0,9.3,25.2,5,9.75,0,constructed_pseudo_absence
+500337,2013-12-06 00:00:00,2013,12,-0.5,0.866,0,0,0,27.3092,94.28341,Arunachal Pradesh,none,none,non_event,2334.2,35.5,21.9,4,18.51,0,constructed_pseudo_absence
+500338,2012-03-03 00:00:00,2012,3,0.866,0.5,0,0,0,27.24697,88.22344,Sikkim,none,none,non_event,2715.4,36.0,41.7,26,6.88,0,constructed_pseudo_absence
+500339,2007-12-03 00:00:00,2007,12,-0.5,0.866,0,0,0,27.1201,96.24559,Arunachal Pradesh,none,none,non_event,2004.1,28.5,21.9,0,87.36,0,constructed_pseudo_absence
+500340,2007-04-10 00:00:00,2007,4,1.0,0.0,0,1,0,22.75098,92.86371,Mizoram,none,none,non_event,1070.8,30.5,117.2,3,4.35,0,constructed_pseudo_absence
+500341,2014-12-25 00:00:00,2014,12,-0.5,0.866,0,0,0,25.51032,91.57507,Meghalaya,none,none,non_event,1247.5,22.4,19.9,2,30.18,0,constructed_pseudo_absence
+500342,2007-02-12 00:00:00,2007,2,0.5,0.866,0,0,0,25.16562,92.59719,Meghalaya,none,none,non_event,1426.7,23.2,26.7,15,20.41,0,constructed_pseudo_absence
+500343,2013-11-24 00:00:00,2013,11,-0.866,0.5,0,0,1,29.35787,91.50863,Arunachal Pradesh,none,none,non_event,2177.4,28.0,14.9,0,200.61,0,constructed_pseudo_absence
+500344,2009-10-03 00:00:00,2009,10,-1.0,-0.0,0,0,1,25.4618,92.68356,Meghalaya,none,none,non_event,1311.3,30.5,63.6,15,23.95,0,constructed_pseudo_absence
+500345,2008-08-17 00:00:00,2008,8,-0.5,-0.866,1,0,0,27.77093,88.33524,Sikkim,none,none,non_event,2804.6,35.2,243.2,3,36.18,0,constructed_pseudo_absence
+500346,2009-02-09 00:00:00,2009,2,0.5,0.866,0,0,0,26.40839,90.09238,Assam,none,none,non_event,618.9,8.8,34.3,0,78.43,0,constructed_pseudo_absence
+500347,2012-05-08 00:00:00,2012,5,0.866,-0.5,0,1,0,27.7708,88.66182,Sikkim,none,none,non_event,2776.9,34.0,156.4,14,17.18,0,constructed_pseudo_absence
+500348,2014-03-04 00:00:00,2014,3,0.866,0.5,0,0,0,24.7061,90.73556,Assam,none,none,non_event,556.3,15.4,62.1,0,58.1,0,constructed_pseudo_absence
+500349,2008-01-26 00:00:00,2008,1,0.0,1.0,0,0,0,25.49711,91.19004,Meghalaya,none,none,non_event,1222.8,30.7,22.5,0,54.59,0,constructed_pseudo_absence
+500350,2009-01-08 00:00:00,2009,1,0.0,1.0,0,0,0,27.22356,96.55378,Arunachal Pradesh,none,none,non_event,1994.7,33.8,13.2,0,82.05,0,constructed_pseudo_absence
+500351,2009-01-13 00:00:00,2009,1,0.0,1.0,0,0,0,28.56383,93.03498,Arunachal Pradesh,none,none,non_event,2002.5,36.2,16.6,0,75.64,0,constructed_pseudo_absence
+500352,2009-02-02 00:00:00,2009,2,0.5,0.866,0,0,0,25.1042,90.10572,Meghalaya,none,none,non_event,1351.2,22.1,35.6,6,44.11,0,constructed_pseudo_absence
+500353,2008-08-09 00:00:00,2008,8,-0.5,-0.866,1,0,0,24.17645,93.72105,Manipur,none,none,non_event,1453.0,31.9,331.6,10,32.66,0,constructed_pseudo_absence
+500354,2009-01-28 00:00:00,2009,1,0.0,1.0,0,0,0,24.87123,93.76972,Assam,none,none,non_event,552.0,9.2,10.9,34,9.06,0,constructed_pseudo_absence
+500355,2016-05-24 00:00:00,2016,5,0.866,-0.5,0,1,0,29.33261,91.79876,Arunachal Pradesh,none,none,non_event,2066.9,31.3,183.4,0,194.98,0,constructed_pseudo_absence
+500356,2009-03-15 00:00:00,2009,3,0.866,0.5,0,0,0,27.19009,88.19324,Sikkim,none,none,non_event,2624.9,43.9,46.7,25,12.81,0,constructed_pseudo_absence
+500357,2015-05-03 00:00:00,2015,5,0.866,-0.5,0,1,0,25.71201,91.29667,Meghalaya,none,none,non_event,1314.2,29.8,174.8,1,28.61,0,constructed_pseudo_absence
+500358,2010-09-26 00:00:00,2010,9,-0.866,-0.5,1,0,0,25.70692,92.19159,Meghalaya,none,none,non_event,1493.2,33.9,220.0,6,27.2,0,constructed_pseudo_absence
+500359,2015-11-12 00:00:00,2015,11,-0.866,0.5,0,0,1,27.86011,88.3232,Sikkim,none,none,non_event,2897.3,32.6,28.6,1,42.71,0,constructed_pseudo_absence
+500360,2016-02-26 00:00:00,2016,2,0.5,0.866,0,0,0,27.29748,88.02346,Sikkim,none,none,non_event,3003.4,40.8,12.0,11,22.22,0,constructed_pseudo_absence
+500361,2010-12-04 00:00:00,2010,12,-0.5,0.866,0,0,0,23.74709,92.02021,Tripura,none,none,non_event,366.1,12.0,3.7,1,31.38,0,constructed_pseudo_absence
+500362,2016-11-26 00:00:00,2016,11,-0.866,0.5,0,0,1,28.81574,97.09203,Arunachal Pradesh,none,none,non_event,2022.6,28.1,34.0,0,91.61,0,constructed_pseudo_absence
+500363,2012-12-01 00:00:00,2012,12,-0.5,0.866,0,0,0,24.13459,94.06654,Manipur,none,none,non_event,1215.1,32.0,8.3,13,4.26,0,constructed_pseudo_absence
+500364,2014-07-06 00:00:00,2014,7,0.0,-1.0,1,0,0,24.86991,93.33882,Manipur,none,none,non_event,1191.3,32.0,338.6,29,13.47,0,constructed_pseudo_absence
+500365,2014-01-20 00:00:00,2014,1,0.0,1.0,0,0,0,25.66183,89.85978,Meghalaya,none,none,non_event,1222.2,22.1,2.6,5,8.15,0,constructed_pseudo_absence
+500366,2012-01-05 00:00:00,2012,1,0.0,1.0,0,0,0,25.54568,94.51971,Manipur,none,none,non_event,935.3,31.4,24.3,15,13.99,0,constructed_pseudo_absence
+500367,2008-04-22 00:00:00,2008,4,1.0,0.0,0,1,0,27.40128,95.12222,Assam,none,none,non_event,522.5,14.2,102.7,0,61.85,0,constructed_pseudo_absence
+500368,2013-11-16 00:00:00,2013,11,-0.866,0.5,0,0,1,22.73877,93.37103,Mizoram,none,none,non_event,1110.9,26.8,17.7,0,50.54,0,constructed_pseudo_absence
+500369,2009-04-24 00:00:00,2009,4,1.0,0.0,0,1,0,25.60183,94.41901,Nagaland,none,none,non_event,1252.9,33.4,119.7,20,8.55,0,constructed_pseudo_absence
+500370,2013-12-25 00:00:00,2013,12,-0.5,0.866,0,0,0,29.35149,97.09732,Arunachal Pradesh,none,none,non_event,2040.6,34.0,2.0,0,108.93,0,constructed_pseudo_absence
+500371,2010-09-04 00:00:00,2010,9,-0.866,-0.5,1,0,0,26.85787,95.13831,Nagaland,none,none,non_event,1507.6,37.3,265.6,3,18.85,0,constructed_pseudo_absence
+500372,2009-09-03 00:00:00,2009,9,-0.866,-0.5,1,0,0,25.02818,95.88899,Assam,none,none,non_event,387.1,10.2,266.4,0,136.77,0,constructed_pseudo_absence
+500373,2010-10-12 00:00:00,2010,10,-1.0,-0.0,0,0,1,26.00393,93.8039,Nagaland,none,none,non_event,1340.6,36.6,69.5,3,25.87,0,constructed_pseudo_absence
+500374,2013-12-14 00:00:00,2013,12,-0.5,0.866,0,0,0,26.73963,94.0855,Arunachal Pradesh,none,none,non_event,2118.8,30.5,8.1,2,47.83,0,constructed_pseudo_absence
+500375,2016-10-22 00:00:00,2016,10,-1.0,-0.0,0,0,1,27.11157,88.43154,Sikkim,none,none,non_event,2745.9,32.1,76.8,30,3.43,0,constructed_pseudo_absence
+500376,2008-01-06 00:00:00,2008,1,0.0,1.0,0,0,0,27.45523,93.38043,Arunachal Pradesh,none,none,non_event,2092.5,29.6,6.9,3,35.38,0,constructed_pseudo_absence

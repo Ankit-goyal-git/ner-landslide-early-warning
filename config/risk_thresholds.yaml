@@ -1,0 +1,52 @@
+# Landslide Risk Thresholds Configuration
+# Prototype thresholds for NER Landslide Early Warning System Hackathon MVP
+# Note: These are baseline calibration thresholds and are fully configurable.
+
+system:
+  version: "1.0.0-hackathon-mvp"
+  region: "North-East India (NER)"
+  target_states:
+    - "Arunachal Pradesh"
+    - "Assam"
+    - "Manipur"
+    - "Meghalaya"
+    - "Mizoram"
+    - "Nagaland"
+    - "Sikkim"
+    - "Tripura"
+
+thresholds:
+  low:
+    min: 0.00
+    max: 0.25
+    label: "LOW"
+    color: "#22c55e" # Green
+    action: "Normal monitoring. No immediate public advisory required."
+    sms_alert: false
+  moderate:
+    min: 0.25
+    max: 0.50
+    label: "MODERATE"
+    color: "#eab308" # Yellow/Amber
+    action: "Elevated vigilance. Monitor drainage channels and steep road cuts."
+    sms_alert: false
+  high:
+    min: 0.50
+    max: 0.75
+    label: "HIGH"
+    color: "#f97316" # Orange
+    action: "Early warning active. Alert local disaster management authorities; restrict heavy transit in vulnerable corridors."
+    sms_alert: true
+  very_high:
+    min: 0.75
+    max: 1.00
+    label: "VERY HIGH"
+    color: "#ef4444" # Red
+    action: "CRITICAL ALERT: Imminent landslide hazard probability. Issue evacuation advisories for foothill settlements and close vulnerable highway sectors."
+    sms_alert: true
+
+model:
+  name: "NER_Landslide_Risk_Engine"
+  version: "v1.0.0"
+  prioritize_metric: "recall"
+  spatial_resolution_km: 1.0

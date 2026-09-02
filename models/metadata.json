@@ -1,0 +1,124 @@
+{
+  "model_name": "Random_Forest",
+  "version": "1.0.0-hackathon-mvp",
+  "training_date": "2026-09-02 01:37:49",
+  "feature_columns": [
+    "latitude",
+    "longitude",
+    "month_sin",
+    "month_cos",
+    "is_monsoon",
+    "pre_monsoon",
+    "post_monsoon",
+    "elevation_proxy_m",
+    "slope_proxy_deg",
+    "rainfall_antecedent_proxy_mm",
+    "historical_density_50km",
+    "min_dist_to_historical_km"
+  ],
+  "feature_importances": {
+    "latitude": 0.0155,
+    "longitude": 0.0133,
+    "month_sin": 0.0114,
+    "month_cos": 0.0529,
+    "is_monsoon": 0.0565,
+    "pre_monsoon": 0.0009,
+    "post_monsoon": 0.0041,
+    "elevation_proxy_m": 0.0165,
+    "slope_proxy_deg": 0.0119,
+    "rainfall_antecedent_proxy_mm": 0.248,
+    "historical_density_50km": 0.0934,
+    "min_dist_to_historical_km": 0.4756
+  },
+  "top_features": [
+    "min_dist_to_historical_km",
+    "rainfall_antecedent_proxy_mm",
+    "historical_density_50km",
+    "is_monsoon",
+    "month_cos"
+  ],
+  "metrics_summary": {
+    "Logistic_Regression_Baseline": {
+      "validation": {
+        "precision": 0.9783,
+        "recall": 0.9783,
+        "f1": 0.9783,
+        "roc_auc": 0.9974,
+        "pr_auc": 0.9981
+      },
+      "test": {
+        "precision": 0.9688,
+        "recall": 0.9688,
+        "f1": 0.9688,
+        "roc_auc": 0.9993,
+        "pr_auc": 0.9991,
+        "confusion_matrix": [
+          [
+            43,
+            1
+          ],
+          [
+            1,
+            31
+          ]
+        ]
+      }
+    },
+    "Random_Forest": {
+      "validation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0
+      },
+      "test": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "confusion_matrix": [
+          [
+            44,
+            0
+          ],
+          [
+            0,
+            32
+          ]
+        ]
+      }
+    },
+    "Gradient_Boosting": {
+      "validation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0
+      },
+      "test": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "confusion_matrix": [
+          [
+            44,
+            0
+          ],
+          [
+            0,
+            32
+          ]
+        ]
+      }
+    }
+  },
+  "split_strategy": "Temporal (Train <= 2013, Val 2014-2015, Test >= 2016)",
+  "train_samples": 388,
+  "val_samples": 163,
+  "test_samples": 76
+}

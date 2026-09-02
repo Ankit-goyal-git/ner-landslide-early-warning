@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.pytest_cache/
+
+# Frontend Node
+node_modules/
+# dist/ (included for zero-setup one-click run)
+.vite/
+
+# Secrets and Local configs
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
