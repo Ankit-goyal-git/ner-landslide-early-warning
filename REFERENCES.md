@@ -72,4 +72,46 @@ This document provides formal citations and reference links for all datasets, me
 * **Scikit-Learn Machine Learning in Python**: Pedregosa, F., et al. (2011). *Scikit-learn: Machine Learning in Python.* Journal of Machine Learning Research, 12, 2825–2830.
 * **Leaflet Mapping Library**: Agafonkin, V. (2010). *Leaflet: an open-source JavaScript library for mobile-friendly interactive maps.* [https://leafletjs.com](https://leafletjs.com)
 * **IETF RFC 7946 (The GeoJSON Format)**: Butler, H., et al. (2016). *The GeoJSON Format Specification.* RFC 7946, Internet Engineering Task Force (IETF). [https://datatracker.ietf.org/doc/html/rfc7946](https://datatracker.ietf.org/doc/html/rfc7946)
-* **CARTO Basemaps**: CARTO Dark Matter Tile Service. [https://carto.com/basemaps](https://carto.com/basemaps)
+---
+
+## 6. 🏔️ Indian Space & North-East Region Specific Studies
+
+### ISRO National Remote Sensing Centre (NRSC) — Landslide Atlas of India
+* **Citation**: National Remote Sensing Centre (NRSC), Indian Space Research Organisation (ISRO). (2023). *Landslide Atlas of India: Spatial database of landslide occurrence and susceptibility in India.* Hyderabad, India.
+* **Scope**: Evaluates 147 landslide-prone districts in India, establishing high exposure ranks across North-Eastern states (e.g., Rudraprayag, North Sikkim, Dima Hasao, Champhai, Aizawl).
+* **URL**: [https://www.nrsc.gov.in](https://www.nrsc.gov.in) / ISRO Bhuvan Disaster Services ([https://bhuvan-app1.nrsc.gov.in/disaster](https://bhuvan-app1.nrsc.gov.in/disaster))
+
+### Semi-Automatic Landslide Detection (ISRO / Indian Terrain)
+* **Citation**: Martha, T. R., Kerle, N., Jetten, V., van Westen, C. J., & Kumar, K. V. (2010). *Characterising spectral, spatial and morphometric properties of landslides for semi-automatic detection using object-oriented methods.* **Geomorphology**, 116(1–2), 24–36.
+  * **DOI**: [10.1016/j.geomorph.2009.10.004](https://doi.org/10.1016/j.geomorph.2009.10.004)
+
+### Rainfall Intensity-Duration Thresholds for Landslides
+* **Citation**: Guzzetti, F., Peruccacci, S., Rossi, M., & Stark, C. P. (2008). *The rainfall intensity–duration control of shallow landslides and debris flows: an update.* **Landslides**, 5(1), 3–17.
+  * **DOI**: [10.1007/s10346-007-0112-1](https://doi.org/10.1007/s10346-007-0112-1)
+
+---
+
+## 7. 📡 IoT & In-Situ Wireless Sensor Early Warning Research
+
+### Real-Time Wireless Sensor Network Deployments in India
+* **Citation**: Ramesh, M. V. (2014). *Design, development, and deployment of a wireless sensor network for detection of landslides.* **Ad Hoc Networks**, 13, 2–18.
+  * **DOI**: [10.1016/j.adhoc.2012.09.002](https://doi.org/10.1016/j.adhoc.2012.09.002)
+* **Relevance**: Validates the integration of geotechnical in-situ sensors (pore pressure, tilt, moisture) for multi-tiered early-warning thresholds.
+
+### Landslide Early Warning System Design Frameworks
+* **Citation**: Intrieri, E., Gigli, G., Mugnai, F., Fanti, R., & Casagli, N. (2012). *Design and implementation of a landslide early warning system.* **Engineering Geology**, 147, 124–136.
+  * **DOI**: [10.1016/j.enggeo.2012.07.017](https://doi.org/10.1016/j.enggeo.2012.07.017)
+
+---
+
+## 8. 🌍 Global Disaster Risk Reduction & Policy Frameworks
+
+### United Nations Disaster Risk Reduction (UNDRR)
+* **Framework**: *Sendai Framework for Disaster Risk Reduction (2015–2030)*.
+  * **Target G**: *"Substantially increase the availability of and access to multi-hazard early warning systems and disaster risk information and assessments to people by 2030."*
+  * **URL**: [https://www.undrr.org/implementing-sendai-framework/what-sendai-framework](https://www.undrr.org/implementing-sendai-framework/what-sendai-framework)
+
+### World Meteorological Organization (WMO)
+* **Initiative**: *Early Warnings for All (EW4All) Initiative* — Spearheaded by the UN Secretary-General to ensure every person on Earth is protected by early warning systems.
+  * **URL**: [https://wmo.int/early-warnings-for-all](https://wmo.int/early-warnings-for-all)
+
