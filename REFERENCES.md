@@ -111,7 +111,35 @@ This document provides formal citations and reference links for all datasets, me
   * **Target G**: *"Substantially increase the availability of and access to multi-hazard early warning systems and disaster risk information and assessments to people by 2030."*
   * **URL**: [https://www.undrr.org/implementing-sendai-framework/what-sendai-framework](https://www.undrr.org/implementing-sendai-framework/what-sendai-framework)
 
-### World Meteorological Organization (WMO)
-* **Initiative**: *Early Warnings for All (EW4All) Initiative* — Spearheaded by the UN Secretary-General to ensure every person on Earth is protected by early warning systems.
-  * **URL**: [https://wmo.int/early-warnings-for-all](https://wmo.int/early-warnings-for-all)
+---
+
+## 9. 🏛️ Overall Project Architecture & System References
+
+### OASIS Common Alerting Protocol (CAP) — Standard for Emergency Alerts
+* **Specification**: Common Alerting Protocol (CAP) v1.2, OASIS Standard / ITU-T Recommendation X.1303.
+* **Indian Implementation**: NDMA National Disaster Alert Portal (*SACHET / Pan-India CAP Platform*).
+* **URL**: [http://docs.oasis-open.org/emergency/cap/v1.2/CAP-v1.2.html](http://docs.oasis-open.org/emergency/cap/v1.2/CAP-v1.2.html) / [https://sachet.ndma.gov.in](https://sachet.ndma.gov.in)
+* **Relevance**: Standardizes the early-warning alert payload structure (`severity`, `urgency`, `certainty`, `polygon/coordinates`, `action_required`) used in [`backend/services/alert_service.py`](backend/services/alert_service.py).
+
+### Citizen Science & Volunteered Geographic Information (VGI)
+* **Citation**: Goodchild, M. F. (2007). *Citizens as sensors: the world of volunteered geography.* **GeoJournal**, 69(4), 211–221.
+  * **DOI**: [10.1007/s10708-007-9111-y](https://doi.org/10.1007/s10708-007-9111-y)
+* **Citation**: Haklay, M. (2013). *Citizen science and volunteered geographic information: Overview and typology of participation.* In **Crowdsourcing Geographic Knowledge** (pp. 105–122). Springer, Dordrecht.
+* **NASA Citizen Science**: *NASA Landslide Reporter Initiative (Cooperative Open Online Landslide Repository)*.
+  * **URL**: [https://landslides.nasa.gov/reporter](https://landslides.nasa.gov/reporter)
+* **Relevance**: Groundwork for the citizen crowd-sourced ground hazard reporting module in [`backend/services/report_service.py`](backend/services/report_service.py).
+
+### Global Emergency GIS & Disaster Monitoring Systems
+* **Copernicus Emergency Management Service (EMS)**:
+  * European Union earth observation and on-demand rapid mapping for disaster risk management.
+  * **URL**: [https://emergency.copernicus.eu](https://emergency.copernicus.eu)
+* **USGS Landslide Hazards Program**:
+  * United States Geological Survey real-time rainfall thresholds, hazard assessment models, and situational awareness maps.
+  * **URL**: [https://www.usgs.gov/programs/landslide-hazards](https://www.usgs.gov/programs/landslide-hazards)
+
+### Emergency Management Standards & Offline Resilience
+* **ISO 22320:2018**: *Security and resilience — Emergency management — Guidelines for incident management and multi-agency operational information structure.*
+* **W3C Offline Web Standards**: *Service Workers, Cache Storage API, and IndexedDB specifications for offline and low-bandwidth resilience in disaster zones.*
+  * **URL**: [https://www.w3.org/TR/service-workers/](https://www.w3.org/TR/service-workers/)
+
 
