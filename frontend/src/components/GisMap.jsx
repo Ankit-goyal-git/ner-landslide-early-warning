@@ -27,18 +27,44 @@ const createCitizenIcon = () => {
 
 function MapController({ center, zoom }) {
   const map = useMap();
+
+  useEffect(() => {
+    // Invalidate size on mount & layout settle to prevent grey/broken tiles in flex/grid
+    const timer = setTimeout(() => {
+      map.invalidateSize();
+    }, 250);
+    return () => clearTimeout(timer);
+  }, [map]);
+
   useEffect(() => {
     if (center) {
-      map.flyTo(center, zoom, { duration: 1.2 });
+      map.flyTo(center, zoom, { duration: 1.0 });
+      map.invalidateSize();
     }
   }, [center, zoom, map]);
+
   return null;
 }
 
-function MapClickHandler({ onMapClick }) {
+function MapClickHandler({ onMapClick, statesList }) {
   useMapEvents({
     click(e) {
-      onMapClick(e.latlng.lat, e.latlng.lng);
+      const clickLat = e.latlng.lat;
+      const clickLon = e.latlng.lng;
+      
+      // Determine nearest state if available
+      let nearestState = 'Assam';
+      let minD = 999999;
+      if (statesList && statesList.length > 0) {
+        statesList.forEach(s => {
+          const d = Math.pow(s.lat - clickLat, 2) + Math.pow(s.lon - clickLon, 2);
+          if (d < minD) {
+            minD = d;
+            nearestState = s.name;
+          }
+        });
+      }
+      onMapClick(clickLat, clickLon, nearestState);
     }
   });
   return null;
@@ -57,6 +83,7 @@ export default function GisMap({
   const [showHeatmap, setShowHeatmap] = useState(true);
   const [showHistorical, setShowHistorical] = useState(true);
   const [showCitizenReports, setShowCitizenReports] = useState(true);
+  const [baseLayer, setBaseLayer] = useState('esri_dark');
   
   // Default NER Center
   const defaultCenter = [26.1433, 91.7898];
@@ -107,12 +134,32 @@ export default function GisMap({
         display: 'flex',
         flexWrap: 'wrap',
         gap: '8px',
-        background: 'rgba(15, 23, 42, 0.88)',
+        background: 'rgba(15, 23, 42, 0.90)',
         backdropFilter: 'blur(12px)',
         padding: '8px 12px',
         borderRadius: '10px',
         border: '1px solid var(--border-color)'
       }}>
+        {/* Basemap Style Selector (100% Free, NO API Key Ever) */}
+        <select
+          value={baseLayer}
+          onChange={(e) => setBaseLayer(e.target.value)}
+          style={{
+            background: 'rgba(30, 41, 59, 0.9)',
+            color: '#93c5fd',
+            border: '1px solid rgba(59, 130, 246, 0.4)',
+            borderRadius: '6px',
+            padding: '4px 8px',
+            fontSize: '0.78rem',
+            fontWeight: 600,
+            cursor: 'pointer'
+          }}
+        >
+          <option value="esri_dark">🗺️ Dark GIS (Esri)</option>
+          <option value="osm">🌐 OpenStreetMap</option>
+          <option value="topo">🏔️ Topo Relief (Esri)</option>
+        </select>
+
         {/* Risk Level Quick Filter */}
         <select
           value={filterRiskLevel}
@@ -213,27 +260,27 @@ export default function GisMap({
         gap: '6px'
       }}>
         <span style={{ fontWeight: 700, color: '#f8fafc', marginBottom: '2px' }}>
-          Hazard Risk Surface Legend
+          Calibrated Hazard Risk Legend
         </span>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#ef4444', display: 'inline-block', boxShadow: '0 0 8px #ef4444' }}></span>
-          <span style={{ color: '#fca5a5' }}>Very High (0.75 – 1.00)</span>
+          <span style={{ color: '#fca5a5' }}>Very High Risk (0.82 – 1.00)</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#f97316', display: 'inline-block' }}></span>
-          <span style={{ color: '#fdba74' }}>High (0.50 – 0.75)</span>
+          <span style={{ color: '#fdba74' }}>High Risk (0.65 – 0.82)</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#f59e0b', display: 'inline-block' }}></span>
-          <span style={{ color: '#fde047' }}>Moderate (0.25 – 0.50)</span>
+          <span style={{ color: '#fde047' }}>Moderate Risk (0.35 – 0.65)</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#10b981', display: 'inline-block' }}></span>
-          <span style={{ color: '#86efac' }}>Low (0.00 – 0.25)</span>
+          <span style={{ color: '#86efac' }}>Low Risk (0.00 – 0.35)</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '4px', marginTop: '2px' }}>
           <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#06b6d4', display: 'inline-block', border: '1px solid white' }}></span>
-          <span style={{ color: '#67e8f9' }}>Citizen Report Observation</span>
+          <span style={{ color: '#67e8f9' }}>Citizen Ground Report</span>
         </div>
       </div>
 
@@ -245,14 +292,31 @@ export default function GisMap({
         zoomControl={true}
       >
         <MapController center={mapCenter} zoom={mapZoom} />
-        <MapClickHandler onMapClick={onLocationSelect} />
+        <MapClickHandler onMapClick={onLocationSelect} statesList={statesList} />
 
-        {/* Dark Map Tiles */}
-        <TileLayer
-          attribution='&copy; <a href="https://carto.com/">CARTO</a> &copy; OpenStreetMap'
-          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-          maxZoom={18}
-        />
+        {/* 100% Free, Zero-API-Key Tile Layer Engine */}
+        {baseLayer === 'esri_dark' && (
+          <TileLayer
+            attribution='Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
+            url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}"
+            maxZoom={18}
+          />
+        )}
+        {baseLayer === 'osm' && (
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            subdomains="abc"
+            maxZoom={19}
+          />
+        )}
+        {baseLayer === 'topo' && (
+          <TileLayer
+            attribution='Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap'
+            url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+            maxZoom={18}
+          />
+        )}
 
         {/* 1. Risk Heatmap Surface Layer */}
         {showHeatmap && filteredPoints.map((pt, idx) => {

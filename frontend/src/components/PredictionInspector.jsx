@@ -2,29 +2,92 @@ import React, { useState, useEffect } from 'react';
 import { Cpu, Sliders, AlertTriangle, ArrowRight, CheckCircle2, ShieldAlert, RefreshCw } from 'lucide-react';
 import axios from 'axios';
 
+const STATE_PROFILES = {
+  'Arunachal Pradesh': { lat: 27.0987, lon: 93.8160, slope: 34, baseRain: 450 },
+  'Assam': { lat: 26.1433, lon: 91.7898, slope: 14, baseRain: 390 },
+  'Manipur': { lat: 24.8170, lon: 93.9368, slope: 27, baseRain: 380 },
+  'Meghalaya': { lat: 25.5788, lon: 91.8933, slope: 28, baseRain: 560 },
+  'Mizoram': { lat: 23.7271, lon: 92.7176, slope: 29, baseRain: 430 },
+  'Nagaland': { lat: 25.6751, lon: 94.1086, slope: 31, baseRain: 410 },
+  'Sikkim': { lat: 27.3389, lon: 88.6065, slope: 38, baseRain: 480 },
+  'Tripura': { lat: 23.8315, lon: 91.2868, slope: 12, baseRain: 360 }
+};
+
+const getEstimatedRainfall = (stateName, selectedMonth) => {
+  const prof = STATE_PROFILES[stateName] || { baseRain: 400 };
+  const monthWeights = {
+    1: 0.05, 2: 0.08, 3: 0.18, 4: 0.45, 5: 0.70,
+    6: 1.05, 7: 1.20, 8: 1.00, 9: 0.80, 10: 0.35,
+    11: 0.10, 12: 0.04
+  };
+  const w = monthWeights[selectedMonth] || 1.0;
+  return Math.round(prof.baseRain * w);
+};
+
 export default function PredictionInspector({
   selectedLocation,
+  selectedState,
+  statesList,
   t,
   onAlertCreated
 }) {
-  const [lat, setLat] = useState(selectedLocation?.lat || 27.3702);
-  const [lon, setLon] = useState(selectedLocation?.lon || 88.7334);
-  const [state, setState] = useState(selectedLocation?.state || 'Sikkim');
+  const [lat, setLat] = useState(27.3389);
+  const [lon, setLon] = useState(88.6065);
+  const [state, setState] = useState('Sikkim');
   const [month, setMonth] = useState(7);
-  const [rainfallMm, setRainfallMm] = useState(420);
-  const [slopeDeg, setSlopeDeg] = useState(34);
+  const [rainfallMm, setRainfallMm] = useState(480);
+  const [slopeDeg, setSlopeDeg] = useState(38);
   
   const [loading, setLoading] = useState(false);
   const [prediction, setPrediction] = useState(null);
 
+  // Sync when selectedState in Navbar changes
+  useEffect(() => {
+    if (selectedState && selectedState !== 'All' && STATE_PROFILES[selectedState]) {
+      const prof = STATE_PROFILES[selectedState];
+      const rain = getEstimatedRainfall(selectedState, month);
+      setState(selectedState);
+      setLat(prof.lat);
+      setLon(prof.lon);
+      setSlopeDeg(prof.slope);
+      setRainfallMm(rain);
+      runPrediction(prof.lat, prof.lon, selectedState, month, rain, prof.slope);
+    }
+  }, [selectedState]);
+
+  // Sync when user clicks map or historical marker
   useEffect(() => {
     if (selectedLocation) {
+      const targetState = selectedLocation.state || state;
+      const prof = STATE_PROFILES[targetState] || { slope: 25 };
+      const rain = getEstimatedRainfall(targetState, month);
+      
       setLat(selectedLocation.lat);
       setLon(selectedLocation.lon);
-      if (selectedLocation.state) setState(selectedLocation.state);
-      runPrediction(selectedLocation.lat, selectedLocation.lon, selectedLocation.state || state, month, rainfallMm, slopeDeg);
+      setState(targetState);
+      setSlopeDeg(prof.slope);
+      setRainfallMm(rain);
+      runPrediction(selectedLocation.lat, selectedLocation.lon, targetState, month, rain, prof.slope);
     }
   }, [selectedLocation]);
+
+  const handleStateChange = (newState) => {
+    const prof = STATE_PROFILES[newState] || { lat: 26.0, lon: 92.0, slope: 25 };
+    const rain = getEstimatedRainfall(newState, month);
+    setState(newState);
+    setLat(prof.lat);
+    setLon(prof.lon);
+    setSlopeDeg(prof.slope);
+    setRainfallMm(rain);
+    runPrediction(prof.lat, prof.lon, newState, month, rain, prof.slope);
+  };
+
+  const handleMonthChange = (newMonth) => {
+    setMonth(newMonth);
+    const rain = getEstimatedRainfall(state, newMonth);
+    setRainfallMm(rain);
+    runPrediction(lat, lon, state, newMonth, rain, slopeDeg);
+  };
 
   const runPrediction = async (pLat = lat, pLon = lon, pState = state, pMonth = month, pRain = rainfallMm, pSlope = slopeDeg) => {
     setLoading(true);
@@ -105,7 +168,13 @@ export default function PredictionInspector({
             type="number"
             step="0.0001"
             value={lat}
-            onChange={(e) => setLat(parseFloat(e.target.value))}
+            onChange={(e) => {
+              const val = parseFloat(e.target.value) || 0;
+              setLat(val);
+              if (val >= 20.0 && val <= 32.0) {
+                runPrediction(val, lon, state, month, rainfallMm, slopeDeg);
+              }
+            }}
             style={{
               width: '100%',
               background: 'rgba(30, 41, 59, 0.8)',
@@ -125,7 +194,13 @@ export default function PredictionInspector({
             type="number"
             step="0.0001"
             value={lon}
-            onChange={(e) => setLon(parseFloat(e.target.value))}
+            onChange={(e) => {
+              const val = parseFloat(e.target.value) || 0;
+              setLon(val);
+              if (val >= 85.0 && val <= 98.0) {
+                runPrediction(lat, val, state, month, rainfallMm, slopeDeg);
+              }
+            }}
             style={{
               width: '100%',
               background: 'rgba(30, 41, 59, 0.8)',
@@ -143,7 +218,7 @@ export default function PredictionInspector({
           <label style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', fontWeight: 600 }}>State Context</label>
           <select
             value={state}
-            onChange={(e) => setState(e.target.value)}
+            onChange={(e) => handleStateChange(e.target.value)}
             style={{
               width: '100%',
               background: 'rgba(30, 41, 59, 0.8)',
@@ -183,11 +258,7 @@ export default function PredictionInspector({
               min="1"
               max="12"
               value={month}
-              onChange={(e) => {
-                const m = parseInt(e.target.value);
-                setMonth(m);
-                runPrediction(lat, lon, state, m, rainfallMm, slopeDeg);
-              }}
+              onChange={(e) => handleMonthChange(parseInt(e.target.value))}
               style={{ width: '100%', cursor: 'pointer', marginTop: '4px' }}
             />
           </div>

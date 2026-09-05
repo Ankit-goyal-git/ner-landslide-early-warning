@@ -46,10 +46,19 @@ class ModelService:
             print(f"Warning: Model file {self.model_path} not found.")
 
         # Load Historical Cleaned Data for Spatial Density
-        clean_csv = os.path.join("data", "processed", "ner_landslides_clean.csv")
+        catalog_csv = os.path.join("data", "processed", "ner_landslides_catalog.csv")
+        clean_csv = catalog_csv if os.path.exists(catalog_csv) else os.path.join("data", "processed", "ner_landslides_clean.csv")
         if os.path.exists(clean_csv):
             df_hist = pd.read_csv(clean_csv)
             self.historical_events = df_hist.to_dict(orient='records')
+            
+        # Precompute radian coordinates for fast vectorized distance calculations
+        if self.historical_events:
+            self.hist_lats = np.radians([float(e['latitude']) for e in self.historical_events])
+            self.hist_lons = np.radians([float(e['longitude']) for e in self.historical_events])
+        else:
+            self.hist_lats = np.array([])
+            self.hist_lons = np.array([])
             
     def get_risk_tier(self, score: float) -> str:
         thresh = self.config.get('thresholds', {})
@@ -61,14 +70,6 @@ class ModelService:
             return "HIGH"
         else:
             return "VERY HIGH"
-
-    def haversine_km(self, lat1, lon1, lat2, lon2):
-        R = 6371.0
-        dlat = math.radians(lat2 - lat1)
-        dlon = math.radians(lon2 - lon1)
-        a = math.sin(dlat / 2.0)**2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2.0)**2
-        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1.0 - a))
-        return R * c
 
     def derive_features(self, lat: float, lon: float, month: int = 7, state: str = "Assam", custom_rainfall: float = None, custom_slope: float = None):
         # Cyclical month
@@ -110,22 +111,19 @@ class ModelService:
             base_rainfall_map = {1: 15.0, 2: 25.0, 3: 65.0, 4: 160.0, 5: 280.0, 6: 420.0, 7: 480.0, 8: 390.0, 9: 310.0, 10: 120.0, 11: 30.0, 12: 12.0}
             rainfall_proxy = base_rainfall_map.get(month, 200.0)
 
-        # Spatial density & distance to historical events
-        near_count = 0
-        min_dist = 9999.0
-        for ev in self.historical_events:
-            try:
-                e_lat = float(ev['latitude'])
-                e_lon = float(ev['longitude'])
-                d = self.haversine_km(lat, lon, e_lat, e_lon)
-                if d < min_dist:
-                    min_dist = d
-                if d <= 50.0:
-                    near_count += 1
-            except (ValueError, KeyError):
-                continue
-                
-        if min_dist > 9000:
+        # Fast vectorized distance to historical events
+        if len(self.hist_lats) > 0:
+            lat_r = math.radians(lat)
+            lon_r = math.radians(lon)
+            dlat = self.hist_lats - lat_r
+            dlon = self.hist_lons - lon_r
+            a = np.sin(dlat / 2.0)**2 + math.cos(lat_r) * np.cos(self.hist_lats) * np.sin(dlon / 2.0)**2
+            c = 2 * np.arctan2(np.sqrt(a), np.sqrt(1.0 - a))
+            dists_km = 6371.0 * c
+            near_count = int(np.sum(dists_km <= 50.0))
+            min_dist = float(np.min(dists_km))
+        else:
+            near_count = 0
             min_dist = 45.0
             
         return {

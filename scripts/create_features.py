@@ -44,40 +44,36 @@ def estimate_terrain_proxies(lat, lon, state_name):
     
     return round(elev, 1), round(slope, 1)
 
-def estimate_rainfall_proxy(month, trigger, is_positive=True):
-    # Rainfall proxy (derived from season & historical meteorological triggers)
-    # Monsoon in NER: June(6), July(7), August(8), September(9) has peak precipitation
-    # Pre-monsoon: April(4), May(5) has moderate storm rain
-    # Post-monsoon / Winter: Oct-March is relatively dry
+def estimate_rainfall_proxy(month, trigger, is_positive=True, is_hard_negative=False):
+    # Monthly base precipitation in NER (June-Sept peak monsoon)
     base_rainfall_map = {
-        1: 15.0, 2: 25.0, 3: 65.0, 4: 160.0, 5: 280.0,
-        6: 420.0, 7: 480.0, 8: 390.0, 9: 310.0, 10: 120.0,
-        11: 30.0, 12: 12.0
+        1: 18.0, 2: 28.0, 3: 75.0, 4: 175.0, 5: 290.0,
+        6: 430.0, 7: 495.0, 8: 410.0, 9: 320.0, 10: 135.0,
+        11: 35.0, 12: 15.0
     }
-    
     base_rf = base_rainfall_map.get(month, 50.0)
     
     if is_positive:
-        # Trigger multiplier for positive events
         trig = (trigger or "").lower()
-        if 'downpour' in trig:
-            multiplier = 1.45
-        elif 'continuous_rain' in trig:
-            multiplier = 1.35
+        if 'cloudburst' in trig or 'extreme' in trig:
+            mult = random.uniform(1.35, 1.65)
+        elif 'downpour' in trig or 'continuous_rain' in trig:
+            mult = random.uniform(1.15, 1.45)
         elif 'monsoon' in trig:
-            multiplier = 1.25
-        elif 'tropical_cyclone' in trig:
-            multiplier = 1.50
-        elif 'rain' in trig:
-            multiplier = 1.15
+            mult = random.uniform(1.05, 1.30)
         else:
-            multiplier = 1.00
+            mult = random.uniform(0.95, 1.25)
+        estimated_rf = base_rf * mult + random.gauss(0, 25.0)
     else:
-        # Pseudo-absence non-events typically have lower/baseline antecedent precipitation
-        multiplier = 0.55 + random.uniform(0.0, 0.35)
-        
-    estimated_rf = base_rf * multiplier + random.uniform(-10.0, 15.0)
-    return round(max(2.0, estimated_rf), 1)
+        if is_hard_negative:
+            # High rainfall on low slope or moderate rain on moderate slope
+            mult = random.uniform(0.85, 1.25)
+            estimated_rf = base_rf * mult + random.gauss(0, 20.0)
+        else:
+            mult = random.uniform(0.40, 0.80)
+            estimated_rf = base_rf * mult + random.gauss(0, 15.0)
+            
+    return round(max(5.0, estimated_rf), 1)
 
 def generate_feature_dataset(clean_csv_path, output_csv_path):
     print("--- Starting Feature Engineering Pipeline ---")
@@ -96,13 +92,15 @@ def generate_feature_dataset(clean_csv_path, output_csv_path):
         try:
             lat = float(r['latitude'])
             lon = float(r['longitude'])
-            year = int(r.get('event_year') or 2012)
+            year = int(r.get('event_year') or 2015)
             month = int(r.get('event_month') or 7)
             state = r.get('state_normalized', 'Assam')
             trigger = r.get('landslide_trigger', 'rain')
             positive_coords.append((lat, lon))
             
             elev, slope = estimate_terrain_proxies(lat, lon, state)
+            # Add natural geological slope noise
+            slope = max(5.0, min(55.0, round(slope + random.gauss(0, 2.5), 1)))
             rainfall = estimate_rainfall_proxy(month, trigger, is_positive=True)
             
             month_rad = 2.0 * math.pi * (month - 1) / 12.0
@@ -135,36 +133,66 @@ def generate_feature_dataset(clean_csv_path, output_csv_path):
     print(f"Successfully processed {len(positive_samples)} positive samples.")
     
     # 2. Documented Spatial-Temporal Negative Sampling (Pseudo-Absence Generation)
-    # Generate 1.5x negative samples across 8 NER states and varying years/months
-    num_negatives = int(len(positive_samples) * 1.5)
-    print(f"Generating {num_negatives} documented spatial-temporal pseudo-absences (label = 0)...")
+    # Generate balanced negative samples (1.2x positive samples) including Hard Negatives
+    num_negatives = int(len(positive_samples) * 1.2)
+    print(f"Generating {num_negatives} realistic spatial-temporal pseudo-absences (including hard negatives, label = 0)...")
     
     negative_samples = []
     state_names = list(NER_STATE_BOUNDS.keys())
     
     neg_id_counter = 500000
-    for _ in range(num_negatives):
+    for i in range(num_negatives):
         neg_id_counter += 1
         st = random.choice(state_names)
         bounds = NER_STATE_BOUNDS[st]
         
-        # Sample coordinate within state bounds
-        lat = random.uniform(bounds['lat_min'], bounds['lat_max'])
-        lon = random.uniform(bounds['lon_min'], bounds['lon_max'])
-        
-        # Sample temporal parameters (matching temporal span 2007-2016)
-        year = random.randint(2007, 2016)
-        # Weight towards non-monsoon months for negative absences
-        month = random.choices(
-            population=list(range(1, 13)),
-            weights=[12, 12, 10, 8, 6, 4, 4, 4, 5, 8, 12, 15],
+        # Determine scenario type
+        scenario = random.choices(
+            population=['standard_plain', 'monsoon_plain_hard_neg', 'winter_mountain_hard_neg', 'moderate_stable'],
+            weights=[40, 25, 20, 15],
             k=1
         )[0]
-        day = random.randint(1, 28)
         
+        if scenario == 'monsoon_plain_hard_neg':
+            # Low slope but high monsoon rain (Flood zones, Brahmaputra alluvial plains)
+            lat = random.uniform(bounds['lat_min'], bounds['lat_max'])
+            lon = random.uniform(bounds['lon_min'], bounds['lon_max'])
+            month = random.choice([6, 7, 8, 9])
+            elev, base_slope = estimate_terrain_proxies(lat, lon, st)
+            slope = round(random.uniform(4.0, 14.0), 1)  # Low slope
+            rainfall = estimate_rainfall_proxy(month, trigger='none', is_positive=False, is_hard_negative=True)
+        elif scenario == 'winter_mountain_hard_neg':
+            # Steep slope but dry winter season
+            lat = random.uniform(bounds['lat_min'], bounds['lat_max'])
+            lon = random.uniform(bounds['lon_min'], bounds['lon_max'])
+            month = random.choice([1, 2, 11, 12])
+            elev, base_slope = estimate_terrain_proxies(lat, lon, st)
+            slope = round(random.uniform(28.0, 45.0), 1)  # Steep mountain
+            rainfall = estimate_rainfall_proxy(month, trigger='none', is_positive=False, is_hard_negative=False)
+        elif scenario == 'moderate_stable':
+            # Moderate rain on moderate slope
+            lat = random.uniform(bounds['lat_min'], bounds['lat_max'])
+            lon = random.uniform(bounds['lon_min'], bounds['lon_max'])
+            month = random.choice([4, 5, 10])
+            elev, base_slope = estimate_terrain_proxies(lat, lon, st)
+            slope = round(random.uniform(16.0, 26.0), 1)
+            rainfall = estimate_rainfall_proxy(month, trigger='none', is_positive=False, is_hard_negative=True)
+        else:
+            # Standard random sampling
+            lat = random.uniform(bounds['lat_min'], bounds['lat_max'])
+            lon = random.uniform(bounds['lon_min'], bounds['lon_max'])
+            month = random.choices(
+                population=list(range(1, 13)),
+                weights=[14, 14, 12, 8, 6, 4, 4, 4, 6, 8, 12, 14],
+                k=1
+            )[0]
+            elev, base_slope = estimate_terrain_proxies(lat, lon, st)
+            slope = max(2.0, min(50.0, round(base_slope + random.gauss(0, 4.0), 1)))
+            rainfall = estimate_rainfall_proxy(month, trigger='none', is_positive=False, is_hard_negative=False)
+            
+        year = random.randint(1998, 2023)
+        day = random.randint(1, 28)
         month_rad = 2.0 * math.pi * (month - 1) / 12.0
-        elev, slope = estimate_terrain_proxies(lat, lon, st)
-        rainfall = estimate_rainfall_proxy(month, trigger='none', is_positive=False)
         
         negative_samples.append({
             'event_id': str(neg_id_counter),
@@ -197,18 +225,23 @@ def generate_feature_dataset(clean_csv_path, output_csv_path):
         lat = item['latitude']
         lon = item['longitude']
         
-        # Count historical landslides within 50km radius and compute min distance
+        # Count other historical landslides within 50km radius and compute min distance to other events
         near_count = 0
         min_dist = 9999.0
         for p_lat, p_lon in positive_coords:
             d = haversine_km(lat, lon, p_lat, p_lon)
+            if d < 0.05:  # Skip self or co-located point
+                continue
             if d < min_dist:
                 min_dist = d
             if d <= 50.0:
                 near_count += 1
                 
+        if min_dist > 500.0:
+            min_dist = 65.0
+            
         item['historical_density_50km'] = near_count
-        item['min_dist_to_historical_km'] = round(min_dist, 2)
+        item['min_dist_to_historical_km'] = round(max(0.5, min_dist + random.uniform(-1.0, 1.0)), 2)
         
     # Write feature dataset
     fieldnames = [
@@ -231,6 +264,8 @@ def generate_feature_dataset(clean_csv_path, output_csv_path):
     print(f"Total rows: {len(all_samples)} (Positive: {len(positive_samples)}, Negative: {len(negative_samples)})")
 
 if __name__ == '__main__':
-    clean_csv = os.path.join('data', 'processed', 'ner_landslides_clean.csv')
+    catalog_csv = os.path.join('data', 'processed', 'ner_landslides_catalog.csv')
+    if not os.path.exists(catalog_csv):
+        catalog_csv = os.path.join('data', 'processed', 'ner_landslides_clean.csv')
     features_csv = os.path.join('data', 'processed', 'ner_features.csv')
-    generate_feature_dataset(clean_csv, features_csv)
+    generate_feature_dataset(catalog_csv, features_csv)

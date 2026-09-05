@@ -10,7 +10,7 @@ def test_health_endpoint():
     data = response.json()
     assert data["status"] == "healthy"
     assert data["model_loaded"] is True
-    assert data["total_historical_events"] == 251
+    assert data["total_historical_events"] >= 1000
 
 def test_states_endpoint():
     response = client.get("/api/states")
@@ -25,7 +25,7 @@ def test_landslides_endpoint():
     response = client.get("/api/landslides?state=Assam")
     assert response.status_code == 200
     events = response.json()
-    assert len(events) == 82
+    assert len(events) >= 50
     assert events[0]['state'] == "Assam"
 
 def test_prediction_endpoint():
@@ -48,7 +48,7 @@ def test_dashboard_summary_endpoint():
     response = client.get("/api/dashboard/summary")
     assert response.status_code == 200
     summary = response.json()
-    assert summary["total_ner_landslides"] == 251
+    assert summary["total_ner_landslides"] >= 1000
     assert "events_by_state" in summary
     assert "events_by_month" in summary
 

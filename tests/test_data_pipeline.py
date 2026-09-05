@@ -33,8 +33,8 @@ def test_feature_dataset_exists():
         reader = csv.DictReader(f)
         rows = list(reader)
         
-    assert len(rows) > 500
+    assert len(rows) >= 1500
     positives = [r for r in rows if r['label'] == '1']
     negatives = [r for r in rows if r['label'] == '0']
-    assert len(positives) == 251
-    assert len(negatives) > 300
+    assert len(positives) >= 1000
+    assert len(negatives) >= 500

@@ -4,18 +4,18 @@
 
 | Feature | Importance Score | Domain Interpretation |
 | :--- | :---: | :--- |
-| `min_dist_to_historical_km` | **0.4756** | Spatial proximity to documented historical hazard hotspots and geological fault zones |
-| `rainfall_antecedent_proxy_mm` | **0.2480** | Cumulative antecedent rainfall proxy (primary trigger for slope saturation and pore water pressure increase) |
-| `historical_density_50km` | **0.0934** | Spatial proximity to documented historical hazard hotspots and geological fault zones |
-| `is_monsoon` | **0.0565** | Seasonal monsoon indicator capturing peak Southwest monsoon intensity in NER |
-| `month_cos` | **0.0529** | Cyclical month encoding capturing seasonal climatic transitions |
-| `elevation_proxy_m` | **0.0165** | Himalayan/Patkai elevation profile proxy reflecting orographic rain and soil stratum |
-| `latitude` | **0.0155** | Geospatial coordinate anchoring state-specific climatic zones |
-| `longitude` | **0.0133** | Geospatial coordinate anchoring state-specific climatic zones |
-| `slope_proxy_deg` | **0.0119** | Physiographic terrain inclination (steeper slopes > 28° exhibit higher shear stress) |
-| `month_sin` | **0.0114** | Cyclical month encoding capturing seasonal climatic transitions |
-| `post_monsoon` | **0.0041** | Seasonal monsoon indicator capturing peak Southwest monsoon intensity in NER |
-| `pre_monsoon` | **0.0009** | Seasonal monsoon indicator capturing peak Southwest monsoon intensity in NER |
+| `rainfall_antecedent_proxy_mm` | **0.3392** | Cumulative antecedent rainfall proxy (primary trigger for slope saturation and pore water pressure increase) |
+| `month_cos` | **0.1759** | Cyclical month encoding capturing seasonal climatic transitions |
+| `is_monsoon` | **0.0944** | Seasonal monsoon indicator capturing peak Southwest monsoon intensity in NER |
+| `slope_proxy_deg` | **0.0859** | Physiographic terrain inclination (steeper slopes > 28° exhibit higher shear stress) |
+| `elevation_proxy_m` | **0.0644** | Himalayan/Patkai elevation profile proxy reflecting orographic rain and soil stratum |
+| `min_dist_to_historical_km` | **0.0526** | Spatial proximity to documented historical hazard hotspots and geological fault zones |
+| `latitude` | **0.0430** | Geospatial coordinate anchoring state-specific climatic zones |
+| `month_sin` | **0.0379** | Cyclical month encoding capturing seasonal climatic transitions |
+| `longitude` | **0.0374** | Geospatial coordinate anchoring state-specific climatic zones |
+| `post_monsoon` | **0.0333** | Seasonal monsoon indicator capturing peak Southwest monsoon intensity in NER |
+| `historical_density_50km` | **0.0201** | Spatial proximity to documented historical hazard hotspots and geological fault zones |
+| `pre_monsoon` | **0.0159** | Seasonal monsoon indicator capturing peak Southwest monsoon intensity in NER |
 
 ---
 

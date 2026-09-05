@@ -142,6 +142,8 @@ export default function App() {
               <div>
                 <PredictionInspector
                   selectedLocation={selectedLocation}
+                  selectedState={selectedState}
+                  statesList={statesList}
                   t={t}
                   onAlertCreated={(alt) => setAlerts(prev => [alt, ...prev])}
                 />
