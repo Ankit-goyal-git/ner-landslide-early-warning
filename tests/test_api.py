@@ -41,8 +41,41 @@ def test_prediction_endpoint():
     assert response.status_code == 200
     res = response.json()
     assert "risk_score" in res
-    assert res["risk_level"] in ["HIGH", "VERY HIGH", "MODERATE", "LOW"]
+    assert res["risk_level"] in ["HIGH", "VERY HIGH", "CRITICAL", "MODERATE", "LOW"]
     assert "explanation" in res
+
+def test_shap_api_endpoints():
+    # GET /api/explain
+    res = client.get("/api/explain?lat=27.3389&lon=88.6065&state=Sikkim")
+    assert res.status_code == 200
+    data = res.json()
+    assert "features" in data
+    assert len(data["features"]) >= 5
+
+    # GET /api/explain/global
+    glob_res = client.get("/api/explain/global")
+    assert glob_res.status_code == 200
+    assert "features" in glob_res.json()
+
+def test_hotspots_and_lhasa_endpoints():
+    # GET /api/hotspots
+    res = client.get("/api/hotspots")
+    assert res.status_code == 200
+    hotspots = res.json()
+    assert len(hotspots) == 8
+    assert hotspots[0]["risk_score_100"] >= 0
+
+    # GET /api/nasa-lhasa/info
+    lhasa_res = client.get("/api/nasa-lhasa/info")
+    assert lhasa_res.status_code == 200
+    assert "nrt_latency_hours" in lhasa_res.json()
+
+def test_timeline_demo_endpoint():
+    res = client.get("/api/timeline-demo")
+    assert res.status_code == 200
+    steps = res.json()
+    assert len(steps) == 5
+    assert steps[0]["step_id"] == "T-24h"
 
 def test_dashboard_summary_endpoint():
     response = client.get("/api/dashboard/summary")
@@ -69,3 +102,4 @@ def test_citizen_reporting_endpoint():
     get_res = client.get("/api/reports")
     assert get_res.status_code == 200
     assert len(get_res.json()) >= 1
+

@@ -7,11 +7,13 @@ from fastapi import APIRouter, HTTPException, Query
 from backend.models.schemas import (
     PredictRequest, PredictionResponse, LandslideEvent,
     CitizenReportCreate, CitizenReport, AlertItem,
-    DashboardSummary, StateSummary
+    DashboardSummary, StateSummary, RiskHotspot, NasaLhasaInfo, TimelineStep
 )
 from backend.services.model_service import model_service
 from backend.services.alert_service import alert_service
 from backend.services.report_service import report_service
+from backend.services.shap_service import shap_service
+from backend.services.nasa_lhasa_service import nasa_lhasa_service
 from backend.services.weather_interface import (
     imd_interface, nasa_gpm_interface, satellite_interface, iot_interface
 )
@@ -27,6 +29,7 @@ def get_landslides_df():
     if os.path.exists(path_to_use):
         return pd.read_csv(path_to_use).fillna("")
     return pd.DataFrame()
+
 
 @router.get("/health", tags=["System"])
 def health_check():
@@ -181,9 +184,149 @@ def predict_risk(req: PredictRequest):
         month=req.month,
         state=req.state,
         custom_rainfall=req.rainfall_mm,
-        custom_slope=req.slope_deg
+        custom_slope=req.slope_deg,
+        horizon_hours=req.horizon_hours or 0
     )
     return PredictionResponse(**pred)
+
+@router.get("/hotspots", response_model=List[RiskHotspot], tags=["Major Risk Areas"])
+def get_major_risk_hotspots(state: Optional[str] = Query(None, description="Filter hotspots by state")):
+    hotspots = model_service.get_major_risk_hotspots()
+    if state and state.lower() != 'all':
+        hotspots = [h for h in hotspots if h['state'].lower() == state.lower()]
+    return hotspots
+
+@router.get("/explain", tags=["Explainable AI (SHAP)"])
+def explain_location_get(
+    lat: float = Query(..., description="Latitude"),
+    lon: float = Query(..., description="Longitude"),
+    month: int = Query(7, ge=1, le=12, description="Month"),
+    state: str = Query("Assam", description="State name"),
+    rainfall_mm: Optional[float] = Query(None, description="24h rainfall in mm"),
+    slope_deg: Optional[float] = Query(None, description="Terrain slope in degrees"),
+    horizon_hours: int = Query(0, description="Forecast horizon in hours (0, 6, 12, 24, 48, 72)"),
+    location_name: Optional[str] = Query(None, description="Friendly location title")
+):
+    try:
+        return shap_service.explain_prediction(
+            lat=lat,
+            lon=lon,
+            month=month,
+            state=state,
+            custom_rainfall=rainfall_mm,
+            custom_slope=slope_deg,
+            horizon_hours=horizon_hours,
+            location_name=location_name
+        )
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Explainability information is currently unavailable for this prediction. Error: {str(e)}"
+        )
+
+@router.post("/explain", tags=["Explainable AI (SHAP)"])
+def explain_location_post(req: PredictRequest):
+    try:
+        return shap_service.explain_prediction(
+            lat=req.latitude,
+            lon=req.longitude,
+            month=req.month,
+            state=req.state,
+            custom_rainfall=req.rainfall_mm,
+            custom_slope=req.slope_deg,
+            horizon_hours=req.horizon_hours or 0,
+            location_name=f"{req.state} Zone ({req.latitude:.2f}°N, {req.longitude:.2f}°E)"
+        )
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Explainability information is currently unavailable for this prediction. Error: {str(e)}"
+        )
+
+@router.get("/explain/global", tags=["Explainable AI (SHAP)"])
+def get_global_shap_importance():
+    return {
+        "title": "Overall Model Feature Importance (mean |SHAP value|)",
+        "features": shap_service.get_global_feature_importance()
+    }
+
+@router.get("/explain/{location_id}", tags=["Explainable AI (SHAP)"])
+def get_hotspot_explanation(location_id: str):
+    hotspots = model_service.get_major_risk_hotspots()
+    match = [h for h in hotspots if h['id'].lower() == location_id.lower()]
+    if not match:
+        raise HTTPException(status_code=404, detail=f"Hotspot location '{location_id}' not found.")
+    
+    h = match[0]
+    return shap_service.explain_prediction(
+        lat=h['latitude'],
+        lon=h['longitude'],
+        month=7,
+        state=h['state'],
+        custom_rainfall=h['recent_rainfall_mm'],
+        location_name=h['name']
+    )
+
+@router.get("/nasa-lhasa/info", response_model=NasaLhasaInfo, tags=["NASA LHASA Architecture"])
+def get_nasa_lhasa_info():
+    return nasa_lhasa_service.get_lhasa_metadata()
+
+@router.get("/timeline-demo", response_model=List[TimelineStep], tags=["Hackathon Demo Mode"])
+def get_timeline_demo():
+    steps = [
+        {
+            "step_id": "T-24h",
+            "time_label": "T−24 Hours",
+            "hours_before": 24,
+            "risk_score_100": 42,
+            "risk_level": "MODERATE",
+            "public_warning_level": "MEDIUM",
+            "rainfall_intensity": "Moderate Continuous Rain (~85 mm/24h)",
+            "description": "Antecedent monsoon saturation begins building up. Soil saturation index reaches 62%. Authorities monitor rainfall gauges."
+        },
+        {
+            "step_id": "T-12h",
+            "time_label": "T−12 Hours",
+            "hours_before": 12,
+            "risk_score_100": 68,
+            "risk_level": "HIGH",
+            "public_warning_level": "HIGH",
+            "rainfall_intensity": "Heavy Monsoonal Downpour (~160 mm/24h)",
+            "description": "Sub-surface pore water pressure accelerates. High landslide risk detected along vulnerable road cuts."
+        },
+        {
+            "step_id": "T-6h",
+            "time_label": "T−6 Hours",
+            "hours_before": 6,
+            "risk_score_100": 88,
+            "risk_level": "CRITICAL",
+            "public_warning_level": "CRITICAL",
+            "rainfall_intensity": "Extreme Cloudburst Event (~240 mm/24h)",
+            "description": "Very high hazard tier triggered. Micro-tremor / tension crack alerts logged. Immediate evacuation advisories issued."
+        },
+        {
+            "step_id": "T-0",
+            "time_label": "T−0 Event",
+            "hours_before": 0,
+            "risk_score_100": 96,
+            "risk_level": "CRITICAL",
+            "public_warning_level": "CRITICAL",
+            "rainfall_intensity": "Peak Deluge (~310 mm cumulative)",
+            "description": "Slope failure / landslide alert active. Road closure enforcement active across critical transit corridors."
+        },
+        {
+            "step_id": "Post-Event",
+            "time_label": "Post-Event",
+            "hours_before": -6,
+            "risk_score_100": 35,
+            "risk_level": "MODERATE",
+            "public_warning_level": "MEDIUM",
+            "rainfall_intensity": "Ebbing Rainfall (~45 mm/24h)",
+            "description": "Event converted into historical landslide catalog. Debris clearance operations underway."
+        }
+    ]
+    return steps
+
 
 @router.get("/dashboard/summary", response_model=DashboardSummary, tags=["Dashboard"])
 def get_dashboard_summary():
